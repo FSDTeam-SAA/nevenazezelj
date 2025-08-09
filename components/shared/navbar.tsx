@@ -19,7 +19,7 @@ export default function Navbar() {
 
     return (
         <nav className="w-full bg-[#1c1c1c] border-b border-gray-800">
-            <div className="container mx-auto lg:pb-5 md:pb-3">
+            <div className="container lg:pb-5 md:pb-3">
                 <div className="flex items-center justify-between md:justify-center">
                     {/* Mobile menu button */}
                     <div className="md:hidden order-2 lg:order-1">
@@ -39,7 +39,7 @@ export default function Navbar() {
                                                 alt="Royalty"
                                                 width={1000}
                                                 height={1000}
-                                                className="lg:h-32 lg:w-32 h-20 w-20"
+                                                className="h-20 w-20"
                                             />
                                         </Link>
                                     </div>
@@ -77,7 +77,7 @@ export default function Navbar() {
                                     alt="Royalty"
                                     width={1000}
                                     height={1000}
-                                    className="lg:h-32 lg:w-32 h-20 w-20"
+                                    className="h-20 w-20"
                                 />
                             </Link>
                             {/* Desktop navigation */}
