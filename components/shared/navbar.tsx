@@ -32,7 +32,7 @@ export default function Navbar() {
                             </SheetTrigger>
                             <SheetContent side="left" className="bg-gray-900 border-gray-800">
                                 <div className="flex items-center justify-between mb-8">
-                                    <div className="flex items-center space-x-2">
+                                    <div className="flex items-center">
                                         <Link href="/" className="flex items-center justify-center">
                                             <Image
                                                 src="/images/logo.png"
@@ -57,7 +57,7 @@ export default function Navbar() {
                                         <Link
                                             key={item.name}
                                             href={item.href}
-                                            className="text-white hover:text-yellow-500 transition-colors duration-200 text-sm font-medium tracking-wide py-2"
+                                            className="text-white hover:text-[#b8bb9a] transition-colors duration-200 text-sm font-medium tracking-wide py-2"
                                             onClick={() => setIsOpen(false)}
                                         >
                                             {item.name}
@@ -70,7 +70,7 @@ export default function Navbar() {
 
                     {/* Logo - centered on mobile, left-aligned on desktop */}
                     <div className="flex md:justify-center order-1 lg:order-2">
-                        <div className="space-y-4">
+                        <div className="md:space-y-4">
                             <Link href="/" className="flex items-center justify-center">
                                 <Image
                                     src="/images/logo.png"
@@ -86,7 +86,7 @@ export default function Navbar() {
                                     <Link
                                         key={item.name}
                                         href={item.href}
-                                        className="text-white hover:text-yellow-500 transition-colors duration-200 text-sm font-medium tracking-wide"
+                                        className="text-white hover:text-[#b8bb9a] transition-colors duration-200 text-sm font-medium tracking-wide"
                                     >
                                         {item.name}
                                     </Link>
