@@ -13,7 +13,7 @@ export default async function WatchDetailsPage({
 
   return (
     <div className="bg-white">
-      <div className="container grid grid-cols-3 gap-5 items-center">
+      <div className="container grid grid-cols-3 gap-5">
         <div className="col-span-2">
           <Gallery images={watch?.images || []} />
         </div>
@@ -22,3 +22,4 @@ export default async function WatchDetailsPage({
     </div>
   );
 }
+
