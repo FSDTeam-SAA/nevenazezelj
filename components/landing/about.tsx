@@ -3,7 +3,6 @@
 import { aboutData } from "@/lib/constant";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
-import { MessageCircle } from "lucide-react";
 import React, { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
