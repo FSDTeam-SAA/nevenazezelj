@@ -38,7 +38,7 @@ export default function Testimonial() {
       ScrollTrigger.create({
         trigger: secRef.current,
         start: "top top",
-        end: "bottom center",
+        end: "bottom bottom",
         pin: imageRef.current,
         pinSpacing: false,
         scrub: 1,
@@ -80,22 +80,11 @@ export default function Testimonial() {
 
   return (
     <section
-      className="relative w-full h-[1400px] py-8 lg:py-20 text-white"
+      className="relative w-full lg:h-[1400px] py-8 lg:py-40 text-white"
       ref={secRef}
     >
       <div className="container">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-          {/* Mobile header */}
-          <div className="lg:hidden mb-8 mx-auto">
-            <p className="text-2xl leading-snug flex flex-wrap gap-3 text-center">
-              <span>Kind words</span>
-              <span className="inline-flex justify-center items-center w-8 h-8 border-2 border-[#1b1b1b] rounded-full">
-                <MessageCircle className="w-3 h-3 animate-bounce" />
-              </span>
-              <span>from peers, partners and clients</span>
-            </p>
-          </div>
-
           {/* Abount data */}
           <div className="space-y-12 lg:space-y-20">
             {aboutData.map((item) => (

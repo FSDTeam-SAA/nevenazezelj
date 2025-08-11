@@ -1,5 +1,6 @@
 import AboutSection from "@/components/landing/about";
 import IntroVideo from "@/components/landing/intro-video";
+import Tags from "@/components/landing/tags";
 import Watches from "@/components/landing/watches";
 
 export default function Home() {
@@ -8,7 +9,7 @@ export default function Home() {
       <IntroVideo />
       <Watches />
       <AboutSection />
-      {/* <div className="h-screen"></div> */}
+      <Tags />
     </main>
   );
 }
