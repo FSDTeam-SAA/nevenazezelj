@@ -13,7 +13,7 @@ export default function Navbar() {
 
     const navigationItems = [
         { name: "HOME", href: "/" },
-        { name: "WE EMPOWER YOU", href: "/empower" },
+        { name: "WE EMPOWER YOU", href: "/about-us" },
         { name: "CONTACT", href: "/contact" },
     ]
 

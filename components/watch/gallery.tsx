@@ -18,12 +18,12 @@ export default function Gallery({ images }: { images: string[] }) {
             className="w-full aspect-[5/4] object-cover"
           />
           {index === 0 && (
-            <div className="absolute rounded-md cursor-pointer bottom-10 right-10 h-10 w-10 bg-white flex items-center justify-center">
+            <div className="absolute text-black rounded-md cursor-pointer bottom-10 right-10 h-10 w-10 bg-white flex items-center justify-center">
               <Maximize className="h-6 w-6" />
             </div>
           )}
           {index === 0 && (
-            <div className="absolute rounded-md cursor-pointer top-1/2 left-5 h-10 w-10 bg-white flex items-center justify-center">
+            <div className="absolute text-black rounded-md cursor-pointer top-1/2 left-5 h-10 w-10 bg-white flex items-center justify-center">
               <Box className="h-6 w-6" />
             </div>
           )}
