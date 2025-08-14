@@ -19,6 +19,7 @@ export default function Craftsman() {
           initial={{ opacity: 0, y: 200 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, ease: "easeOut" }}
+          viewport={{ once: true, amount: 0.2 }}
           className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8"
         >
           <Card className="p-4 sm:p-6 text-center hover:shadow-lg transition-shadow">
@@ -72,7 +73,8 @@ export default function Craftsman() {
             initial={{ opacity: 0, x: -200 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5, ease: "easeOut" }}
-            className="text-base sm:text-lg leading-relaxed text-muted-foreground max-w-4xl mx-auto mb-6"
+            viewport={{ once: true, amount: 0.2 }}
+            className="text-base lg:text-2xl leading-relaxed text-muted-foreground max-w-4xl mx-auto mb-6"
           >
             Our selection of materials includes the finest materials such as
             titanium, platinum, 18k gold, and rhodium plating, all chosen for
@@ -84,7 +86,8 @@ export default function Craftsman() {
             initial={{ opacity: 0, x: 200 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5, ease: "easeOut" }}
-            className="text-base sm:text-lg leading-relaxed text-muted-foreground max-w-4xl mx-auto"
+            viewport={{ once: true, amount: 0.2 }}
+            className="text-base lg:text-2xl leading-relaxed text-muted-foreground max-w-4xl mx-auto"
           >
             Our watch offerings feature both automatic and quartz movements,
             catering to diverse preferences while maintaining our high standards

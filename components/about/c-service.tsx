@@ -1,23 +1,35 @@
 import React from "react";
+import * as motion from "motion/react-client";
 
 export default function CustomerService() {
   return (
-    <section className="py-24 px-6 luxury-gradient text-white">
+    <section className="px-4 sm:px-6 lg:px-8 py-12 lg:py-24 luxury-gradient text-white">
       <div className="max-w-4xl mx-auto text-center">
-        <h2 className="font-serif text-4xl md:text-5xl font-bold mb-12">
+        {/* Heading */}
+        <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl font-bold mb-6 sm:mb-12">
           Our Customers
         </h2>
-        <p className="text-xl leading-relaxed mb-8">
+
+        {/* Description */}
+        <p className="text-base sm:text-lg md:text-xl leading-relaxed mb-6 sm:mb-8 text-foreground/80">
           At ROYALTY©, our Customer Service is not another logistical process
           but a commitment. We are devoted to our customers&apos; long-lasting
           satisfaction, bringing you the finest watches that are durable and
           will last a lifetime, along with treatment akin to that of royalty.
         </p>
-        <div className="bg-gradient-to-r from-amber-400 to-yellow-500 text-black p-8 rounded-lg">
-          <p className="font-serif text-2xl md:text-3xl font-bold">
+
+        {/* Highlighted Statement */}
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
+          viewport={{ once: true, amount: 0.2 }}
+          className="bg-primary text-black p-6 sm:p-8 md:p-12 rounded-lg"
+        >
+          <p className="font-serif text-xl sm:text-2xl md:text-3xl font-bold">
             WELCOME TO THE ROYAL FAMILY ✦ SHINE BRIGHT LIKE A DIAMOND
           </p>
-        </div>
+        </motion.div>
       </div>
     </section>
   );
