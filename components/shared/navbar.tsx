@@ -13,8 +13,8 @@ export default function Navbar() {
 
     const navigationItems = [
         { name: "HOME", href: "/" },
-        { name: "WE EMPOWER YOU", href: "/about-us" },
-        { name: "CONTACT", href: "/contact" },
+        { name: "MEET ROYALTY", href: "/about-us" },
+        { name: "CONTACT US", href: "/contact" },
     ]
 
     return (
@@ -31,26 +31,18 @@ export default function Navbar() {
                                 </Button>
                             </SheetTrigger>
                             <SheetContent side="left" className="bg-gray-900 border-gray-800">
-                                <div className="flex items-center justify-between mb-8">
-                                    <div className="flex items-center">
+                                <div className="flex items-center justify-center mb-8">
+                                    <div className="flex items-center justify-center">
                                         <Link href="/" className="flex items-center justify-center">
                                             <Image
-                                                src="/images/logo.png"
+                                                src="/images/logo-full.png"
                                                 alt="Royalty"
                                                 width={1000}
                                                 height={1000}
-                                                className="h-20 w-20"
+                                                className="h-28 w-40"
                                             />
                                         </Link>
                                     </div>
-                                    <Button
-                                        variant="ghost"
-                                        size="icon"
-                                        onClick={() => setIsOpen(false)}
-                                        className="text-white hover:bg-gray-800"
-                                    >
-                                        <X className="!h-7 !w-7 text-[#b8bb9a] mr-7" />
-                                    </Button>
                                 </div>
                                 <div className="flex flex-col space-y-4 pl-5">
                                     {navigationItems.map((item) => (
@@ -73,11 +65,11 @@ export default function Navbar() {
                         <div className="md:space-y-4">
                             <Link href="/" className="flex items-center justify-center">
                                 <Image
-                                    src="/images/logo.png"
+                                    src="/images/logo-full.png"
                                     alt="Royalty"
                                     width={1000}
                                     height={1000}
-                                    className="h-20 w-20"
+                                    className="lg:h-32 h-20 lg:w-52 w-32"
                                 />
                             </Link>
                             {/* Desktop navigation */}
