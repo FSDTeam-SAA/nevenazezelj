@@ -7,6 +7,7 @@ import {
   DialogTrigger,
 } from "@/components/ui/dialog";
 import { Box } from "lucide-react";
+import WatchViewer from "./model-viewer";
 
 export function ModelModal() {
   return (
@@ -19,12 +20,13 @@ export function ModelModal() {
           </div>
         </div>
       </DialogTrigger>
-      <DialogContent className="h-svh w-[100vw] bg-white">
+      <DialogContent className="h-svh w-[100vw] bg-[#efefef]">
         <DialogHeader>
           <DialogTitle className="sr-only">View 3D Model</DialogTitle>
           <DialogDescription className="sr-only">
-            <p>View the 3D model of the watch here.</p>
+            View the 3D model of the watch here.
           </DialogDescription>
+          <WatchViewer />
         </DialogHeader>
       </DialogContent>
     </Dialog>
