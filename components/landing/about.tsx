@@ -109,12 +109,13 @@ export default function Testimonial() {
             className="hidden lg:block lg:sticky lg:top-24 place-items-end"
           >
             <Image
-              src={aboutData[currentIndex]?.imageUrl || "/images/rolex1.jpg"}
+              src={aboutData[currentIndex]?.imageUrl || "/images/gold1.jpg"}
               alt={aboutData[currentIndex]?.title || "Sticky Image"}
               width={1000}
               height={1000}
-              className="w-4/5 aspect-[5/4] object-cover"
+              className="w-4/5 aspect-[5/4] object-contain"
               priority
+              quality={100}
             />
           </div>
         </div>
