@@ -1,6 +1,10 @@
-import { Box, Maximize } from "lucide-react";
+"use client";
+
+import { Maximize } from "lucide-react";
 import Image from "next/image";
-import React from "react";
+import React, { useState } from "react";
+import { ModelModal } from "./model-modal";
+import { GalleryModal } from "./gallery-modal";
 
 export default function Gallery({ images }: { images: string[] }) {
   return (
@@ -18,13 +22,9 @@ export default function Gallery({ images }: { images: string[] }) {
             className="w-full aspect-[5/4] object-cover"
           />
           {index === 0 && (
-            <div className="absolute text-black rounded-md cursor-pointer bottom-10 right-10 h-10 w-10 bg-white flex items-center justify-center">
-              <Maximize className="h-6 w-6" />
-            </div>
-          )}
-          {index === 0 && (
-            <div className="absolute text-black rounded-md cursor-pointer top-1/2 left-5 h-10 w-10 bg-white flex items-center justify-center">
-              <Box className="h-6 w-6" />
+            <div className="absolute top-1/2 left-5 transform -translate-y-1/2 space-y-2">
+              <ModelModal />
+              <GalleryModal />
             </div>
           )}
         </div>
