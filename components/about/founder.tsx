@@ -63,7 +63,7 @@ export default function Founder() {
             </p>
 
             {/* Quote / Blockquote */}
-            <blockquote className="border-l-4 border-amber-400 pl-4 sm:pl-6 italic text-base sm:text-lg text-muted-foreground">
+            <blockquote className="border-l-4 border-[#C0A875] pl-4 sm:pl-6 italic text-base sm:text-lg text-muted-foreground">
               &quot;Helping others feel beautiful for who they are makes me
               truly happy. I love seeing people feel empowered.&quot;
               <cite className="block mt-2 font-semibold text-foreground">

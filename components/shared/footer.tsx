@@ -85,7 +85,7 @@ export default function Footer() {
             {/* Social Media Icons - keeping as anchor tags since these are external links */}
             <div className="flex items-center space-x-8">
               <Link
-                href="https://www.instagram.com/royaltyfashion_official/"
+                href="https://www.instagram.com/royaltywatches_official/profilecard/?igsh=MWNueHQ4NXEwMGVndg=="
                 target="_blank"
                 className="text-gray-400 hover:text-white transition-colors"
               >
@@ -98,7 +98,7 @@ export default function Footer() {
                 />
               </Link>
               <Link
-                href="https://www.tiktok.com/@royaltywatches"
+                href="https://www.tiktok.com/@royaltywatches_official?_t=ZN-8yvlE1Ke3mA&_r=1"
                 target="_blank"
                 className="text-gray-400 hover:text-white transition-colors"
               >

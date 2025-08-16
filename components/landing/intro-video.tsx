@@ -15,7 +15,7 @@ export default function IntroVideo() {
   };
 
   return (
-    <section className="relative h-[50vh] md:h-[85vh] w-full">
+    <section className="relative h-[50vh] md:h-[calc(100vh-150px)] lg:h-[calc(100vh-110px)] w-full">
       <video
         ref={videoRef}
         className="h-full w-full object-cover relative z-20"

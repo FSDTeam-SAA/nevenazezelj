@@ -73,19 +73,19 @@ export default function Watches() {
 
             <div className="space-y-4 mt-4">
               <div className="flex items-center space-x-3">
-                <div className="w-3 h-3 diamond-shape bg-amber-400"></div>
+                <div className="w-3 h-3 diamond-shape bg-[#C0A875]"></div>
                 <span className="text-foreground">
                   Internationally patented diamond-shaped case
                 </span>
               </div>
               <div className="flex items-center space-x-3">
-                <div className="w-3 h-3 diamond-shape bg-amber-400"></div>
+                <div className="w-3 h-3 diamond-shape bg-[#C0A875]"></div>
                 <span className="text-foreground">
                   Dual integrated windows design
                 </span>
               </div>
               <div className="flex items-center space-x-3">
-                <div className="w-3 h-3 diamond-shape bg-amber-400"></div>
+                <div className="w-3 h-3 diamond-shape bg-[#C0A875]"></div>
                 <span className="text-foreground">
                   Personalization and engraving options
                 </span>

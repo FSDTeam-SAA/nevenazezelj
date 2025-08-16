@@ -40,7 +40,7 @@ export default function Identity() {
             transition={{ duration: 0.5, ease: "easeOut" }}
             viewport={{ once: true, amount: 0.2 }}
           >
-            <Card className="p-6 sm:p-8 bg-primary">
+            <Card className="p-6 sm:p-8 bg-[#C0A875]">
               <div className="text-center">
                 <div className="flex justify-center">
                   <Image

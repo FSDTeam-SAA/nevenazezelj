@@ -6,7 +6,7 @@ export default function CustomerService() {
     <section className="px-4 sm:px-6 lg:px-8 py-12 lg:py-24 luxury-gradient text-white">
       <div className="max-w-4xl mx-auto text-center">
         {/* Heading */}
-        <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl font-bold mb-6 sm:mb-12">
+        <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6 sm:mb-12">
           Our Customers
         </h2>
 
@@ -26,7 +26,7 @@ export default function CustomerService() {
           viewport={{ once: true, amount: 0.2 }}
           className="bg-primary text-black p-6 sm:p-8 md:p-12 rounded-lg"
         >
-          <p className="font-serif text-xl sm:text-2xl md:text-3xl font-bold">
+          <p className="text-xl sm:text-2xl md:text-3xl font-bold">
             WELCOME TO THE ROYAL FAMILY ✦ SHINE BRIGHT LIKE A DIAMOND
           </p>
         </motion.div>

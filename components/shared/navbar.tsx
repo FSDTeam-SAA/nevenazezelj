@@ -18,8 +18,8 @@ export default function Navbar() {
   ];
 
   return (
-    <nav className="w-full bg-[#1c1c1c] border-b border-gray-800">
-      <div className="container lg:pb-5 md:pb-3">
+    <nav className="w-full bg-[#000000] border-b border-gray-800 sticky top-0 z-50">
+      <div className="container lg:pb-5 py-1 md:py-0 md:pb-3">
         <div className="flex items-center justify-between md:justify-center">
           {/* Mobile menu button */}
           <div className="md:hidden order-2 lg:order-1">
@@ -30,7 +30,7 @@ export default function Navbar() {
                   size="lg"
                   className="text-white hover:bg-gray-800"
                 >
-                  <Menu className="!h-8 !w-8 text-[#b8bb9a]" />
+                  <Menu className="!h-8 !w-8 text-[#C0A875]" />
                   <span className="sr-only">Open menu</span>
                 </Button>
               </SheetTrigger>
@@ -53,7 +53,7 @@ export default function Navbar() {
                     <Link
                       key={item.name}
                       href={item.href}
-                      className="text-white hover:text-[#b8bb9a] transition-colors duration-200 text-sm font-medium tracking-wide py-2"
+                      className="text-white hover:text-[#C0A875] transition-colors duration-200 text-sm font-medium tracking-wide py-2"
                       onClick={() => setIsOpen(false)}
                     >
                       {item.name}
@@ -73,7 +73,7 @@ export default function Navbar() {
                   alt="Royalty"
                   width={1000}
                   height={1000}
-                  className="h-14 w-fit object-contain lg:mt-2"
+                  className="h-14 w-fit object-contain md:mt-2"
                 />
               </Link>
               {/* Desktop navigation */}
@@ -82,7 +82,7 @@ export default function Navbar() {
                   <Link
                     key={item.name}
                     href={item.href}
-                    className="text-white hover:text-[#b8bb9a] text-center transition-colors duration-200 text-sm font-medium tracking-wide"
+                    className="text-white hover:text-[#C0A875] text-center transition-colors duration-200 text-sm font-medium tracking-wide"
                   >
                     {item.name}
                   </Link>
