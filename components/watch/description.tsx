@@ -26,19 +26,19 @@ interface Watch {
 
 export default function Description({ watch }: { watch: Watch }) {
   return (
-    <div className="lg:py-10 lg:space-y-5 text-black col-span-1">
+    <div className="lg:py-10 lg:space-y-5 space-y-2 text-black col-span-1">
       <div className="">
-        <h2 className="text-[#3a3935] text-4xl font-semibold uppercase">
+        <h2 className="text-[#3a3935] lg:text-4xl text-3xl font-semibold uppercase">
           {watch?.title}
         </h2>
-        <p className="text-[#b7a98e] lg:text-2xl font-semibold uppercase">
+        <p className="text-[#b7a98e] lg:text-2xl text-xl font-semibold uppercase">
           {watch?.descriptionOne}
         </p>
       </div>
-      <p className="text-[#3A3935] lg:text-2xl font-medium">
+      <p className="text-[#3A3935] lg:text-2xl text-xl font-medium">
         {watch?.price?.toLocaleString("fr-FR").replace(/\u202f/g, " ")} &euro;
       </p>
-      <p>{watch?.descriptionTwo}</p>
+      <p className="text-base">{watch?.descriptionTwo}</p>
       <div className="space-y-2">
         <div className="flex items-center gap-1 h-12">
           <Button className="bg-[#3a3935] hover:bg-[#3a3935] cursor-pointer text-foreground text-lg w-[90%] h-full uppercase tracking-wide rounded-xs">

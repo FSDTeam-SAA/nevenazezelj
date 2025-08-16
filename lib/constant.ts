@@ -114,7 +114,7 @@ export const aboutData = [
     description:
       "Welcome to ROYALTY, where we believe that every person has the potential to be a king or queen in their own right. Our brand is all about promoting self-belief and motivation, and encouraging you to pursue your dreams with confidence and style.",
     btnText: "About Us",
-    btnLink: "#",
+    btnLink: "/about-us",
     imageUrl: "/images/gold1.jpg",
   },
   {

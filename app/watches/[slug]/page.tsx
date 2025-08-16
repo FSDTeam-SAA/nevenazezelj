@@ -14,23 +14,25 @@ export default async function WatchDetailsPage({
 
   return (
     <div className="bg-white lg:pb-20">
-      <div className="container grid grid-cols-3 gap-8">
-        <div className="col-span-2">
+      <div className="container grid grid-cols-1 lg:grid-cols-3 lg:gap-8 gap-12">
+        <div className="lg:col-span-2">
           <Gallery images={watch?.images || []} />
         </div>
-        <Description
-          watch={
-            watch ?? {
-              title: "",
-              descriptionOne: "",
-              descriptionTwo: "",
-              price: 0,
-              details: "",
-              features: [],
-              strapAndBuckles: [],
+        <div className="lg:col-span-1">
+          <Description
+            watch={
+              watch ?? {
+                title: "",
+                descriptionOne: "",
+                descriptionTwo: "",
+                price: 0,
+                details: "",
+                features: [],
+                strapAndBuckles: [],
+              }
             }
-          }
-        />
+          />
+        </div>
       </div>
     </div>
   );
