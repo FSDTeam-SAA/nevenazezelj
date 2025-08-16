@@ -10,7 +10,7 @@ export default function Watches() {
           <h2 className="text-4xl md:text-5xl font-bold mb-8 text-foreground">
             Our Watches
           </h2>
-          <p className="lg:text-xl text-base text-justify leading-relaxed text-foreground/80">
+          <p className="lg:text-xl text-base text-justify lg:text-center leading-relaxed text-foreground/80">
             ROYALTY© is a brand made for today&apos;s visionaries and leaders
             who are perfectionists and passionate. Elegant, empowering, and
             outstanding design make up a line of high-quality watches. Each
@@ -26,7 +26,7 @@ export default function Watches() {
         </div>
 
         {/* Grid with Image and Text */}
-        <div className="grid md:grid-cols-2 gap-12 items-start mb-16">
+        <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
           {/* Image */}
           <div>
             <Image
@@ -34,7 +34,7 @@ export default function Watches() {
               alt="ROYALTY© Diamond King Collection Watch"
               width={1000}
               height={1000}
-              className="w-full h-auto rounded-lg shadow-2xl"
+              className="w-full aspect-[5/4] object-contain rounded-lg"
             />
           </div>
 

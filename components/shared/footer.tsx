@@ -35,7 +35,7 @@ export default function Footer() {
           </div>
 
           {/* Information */}
-          <div className="flex justify-center">
+          <div className="flex lg:justify-center">
             <div className="space-y-4">
               <h3 className="text-sm font-semibold text-gray-400 uppercase tracking-wider">
                 Information
@@ -64,7 +64,7 @@ export default function Footer() {
           </div>
 
           {/* SSL Badge */}
-          <div className="flex items-center justify-end">
+          <div className="flex items-center  lg:justify-end">
             <div className="w-24 h-24 rounded-full flex items-center justify-center">
               <Image
                 src="/images/ssl.png"

@@ -73,7 +73,7 @@ export default function Navbar() {
                   alt="Royalty"
                   width={1000}
                   height={1000}
-                  className="lg:h-32 h-20 lg:w-52 w-32"
+                  className="lg:h-20 h-20 lg:w-36 w-32"
                 />
               </Link>
               {/* Desktop navigation */}
