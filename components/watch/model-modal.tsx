@@ -6,15 +6,21 @@ import {
   DialogTitle,
   DialogTrigger,
 } from "@/components/ui/dialog";
-import { Box } from "lucide-react";
 import WatchViewer from "./model-viewer";
+import Image from "next/image";
 
 export function ModelModal() {
   return (
     <Dialog>
       <DialogTrigger asChild>
-        <div className="relative group text-black lg:rounded-md rounded-xs cursor-pointer lg:h-10 h-6 lg:w-10 w-6 bg-white flex items-center justify-center">
-          <Box className="lg:h-6 h-4 lg:w-6 w-4" />
+        <div className="relative group text-black lg:rounded-md rounded-sm cursor-pointer lg:h-10 h-6 lg:w-10 w-6 bg-white flex items-center justify-center">
+          <Image
+            src="/images/3d-modeling.gif"
+            alt="View 3D"
+            width={1000}
+            height={1000}
+            className="lg:h-10 h-4 lg:w-10 w-4"
+          />
           <div className="hidden group-hover:block absolute top-1/2 -translate-y-1/2 left-full overflow-visible w-20 text-center bg-black/70 text-white text-[14px]">
             <p>View 3D</p>
           </div>
