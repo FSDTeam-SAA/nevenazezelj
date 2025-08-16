@@ -17,7 +17,7 @@ export default function Founder() {
           >
             <Image
               src="/images/nevena.jpg"
-              alt="Nevena Žeželj, Founder of ROYALTY©"
+              alt="Nevena Žeželj, Founder of ROYALTY&copy;"
               width={500}
               height={600}
               className="w-full h-auto rounded-lg shadow-2xl object-cover"
@@ -42,7 +42,7 @@ export default function Founder() {
 
             {/* Paragraphs */}
             <p className="text-base sm:text-lg leading-relaxed text-muted-foreground mb-4 sm:mb-6">
-              ROYALTY© is founded by Nevena Žeželj, a former pilot, an
+              ROYALTY&copy; is founded by Nevena Žeželj, a former pilot, an
               anti-financial crime expert, and a philanthropist. ROYALTY was
               born out of her vision, and she is the creative force behind the
               brand.
@@ -63,7 +63,7 @@ export default function Founder() {
             </p>
 
             {/* Quote / Blockquote */}
-            <blockquote className="border-l-4 border-amber-400 pl-4 sm:pl-6 italic text-base sm:text-lg text-muted-foreground">
+            <blockquote className="border-l-4 border-[#C0A875] pl-4 sm:pl-6 italic text-base sm:text-lg text-muted-foreground">
               &quot;Helping others feel beautiful for who they are makes me
               truly happy. I love seeing people feel empowered.&quot;
               <cite className="block mt-2 font-semibold text-foreground">

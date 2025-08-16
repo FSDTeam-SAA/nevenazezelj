@@ -8,13 +8,13 @@ export default function Watches() {
   return (
     <section className="py-8 lg:py-20">
       <div className="container">
-        <div className="text-center text-[#b8bb9a] max-w-3xl mx-auto lg:space-y-5 space-y-3">
+        <div className="text-center text-[#C0A875] max-w-3xl mx-auto lg:space-y-5 space-y-3">
           <h2 className="lg:text-5xl text-2xl font-bold uppercase">
             The Diamond King
           </h2>
           <p className="text-sm lg:text-base text-justify lg:text-center">
             Introducing the Diamond King Collection the inaugural signature line
-            from ROYALTY, crafted to redefine luxury and precision. This
+            from ROYALTY 	&copy;, crafted to redefine luxury and precision. This
             collection marks the beginning of a new era in high-end timepieces,
             embodying elegance, innovation, and exclusivity. At the heart of
             this collection lies our unique, internationally patented design a
@@ -37,12 +37,12 @@ export default function Watches() {
                 </div>
               </Link>
               <div className="lg:pt-5 pt-2 space-y-1">
-                <p className="text-[#b8bb9a] text-sm">DIAMOND KING</p>
-                <h3 className="lg:text-2xl text-xl font-semibold text-[#b8bb9a]">
+                <p className="text-[#C0A875] text-sm">DIAMOND KING</p>
+                <h3 className="lg:text-2xl text-xl font-semibold text-[#C0A875]">
                   {watch.title}
                 </h3>
                 <Link href={`/watches/${watch.slug}`}>
-                  <p className="text-[#b8bb9a] flex items-center gap-2">
+                  <p className="text-[#C0A875] flex items-center gap-2">
                     Discover More <ChevronRight className="w-4 h-4" />
                   </p>
                 </Link>

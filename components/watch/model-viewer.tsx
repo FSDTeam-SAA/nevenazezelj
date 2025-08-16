@@ -7,6 +7,7 @@ import {
   useGLTF,
   Center,
   useProgress,
+  ContactShadows,
 } from "@react-three/drei";
 import { Suspense, useRef, useState, useEffect } from "react";
 import { usePathname } from "next/navigation";
@@ -35,8 +36,8 @@ function WatchModel({ onModelLoaded }: { onModelLoaded: () => void }) {
   }, [onModelLoaded]);
 
   return (
-    <Center position={isMobile ? [0, 0.6, 0] : [0, 0, 0]}>
-      <primitive object={scene} scale={isMobile ? 1 : 1.7} />
+    <Center position={isMobile ? [0.03, 1 / 2, 0] : [0.1, 0, 0]}>
+      <primitive object={scene} scale={isMobile ? 1.3 : 1.7} />
     </Center>
   );
 }
@@ -78,12 +79,25 @@ export default function WatchViewer() {
   return (
     <div className="relative h-svh w-svw border-2">
       {!isLoaded && <Loader />}
-      <Canvas camera={{ position: [0, 0, 5], fov: 40 }}>
-        <ambientLight intensity={0} />
-        <directionalLight position={[5, 5, 5]} intensity={1} />
+      <Canvas shadows camera={{ position: [0, 0, 5], fov: 40 }}>
+        <ambientLight intensity={0.5} />
+        <directionalLight
+          castShadow
+          position={[5, 5, 5]}
+          intensity={1}
+          shadow-mapSize-width={2048}
+          shadow-mapSize-height={2048}
+        />
         <Suspense fallback={null}>
           <WatchModel onModelLoaded={handleModelLoaded} />
           <Environment preset="studio" />
+          <ContactShadows
+            position={[0, -1.2, 0]}
+            opacity={0.5}
+            scale={7}
+            blur={3}
+            far={5}
+          />
         </Suspense>
         <OrbitControls
           ref={controlsRef}

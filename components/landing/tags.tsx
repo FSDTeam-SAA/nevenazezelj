@@ -32,7 +32,7 @@ export default function Tags() {
                   alt={title}
                   width={20}
                   height={20}
-                  className="h-5 w-5 text-[#b8bb9a]"
+                  className="h-5 w-5 text-[#C0A875]"
                 />
               </div>
               <h2 className="font-medium uppercase tracking-wide text-base">

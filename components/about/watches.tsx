@@ -11,7 +11,7 @@ export default function Watches() {
             Our Watches
           </h2>
           <p className="lg:text-xl text-base text-justify lg:text-center leading-relaxed text-foreground/80">
-            ROYALTY© is a brand made for today&apos;s visionaries and leaders
+            ROYALTY&copy; is a brand made for today&apos;s visionaries and leaders
             who are perfectionists and passionate. Elegant, empowering, and
             outstanding design make up a line of high-quality watches. Each
             detail is carefully designed in our German headquarters by our
@@ -31,7 +31,7 @@ export default function Watches() {
           <div>
             <Image
               src="/images/watch.jpg"
-              alt="ROYALTY© Diamond King Collection Watch"
+              alt="ROYALTY&copy; Diamond King Collection Watch"
               width={1000}
               height={1000}
               className="w-full aspect-[5/4] object-contain rounded-lg"
@@ -44,11 +44,11 @@ export default function Watches() {
               Swiss Made Excellence
             </h3>
             <p className="text-lg leading-relaxed text-foreground">
-              The core design of ROYALTY© watches is built around an
+              The core design of ROYALTY&copy; watches is built around an
               internationally patented, diamond-shaped case. This proprietary
               design guarantees that each watch bears a unique aesthetic
               signature, protected under international patent laws, ensuring
-              that the case shape remains exclusive to ROYALTY©.
+              that the case shape remains exclusive to ROYALTY&copy;.
             </p>
             <p className="text-lg leading-relaxed text-foreground">
               Our signature design features two integrated windows:
@@ -73,19 +73,19 @@ export default function Watches() {
 
             <div className="space-y-4 mt-4">
               <div className="flex items-center space-x-3">
-                <div className="w-3 h-3 diamond-shape bg-amber-400"></div>
+                <div className="w-3 h-3 diamond-shape bg-[#C0A875]"></div>
                 <span className="text-foreground">
                   Internationally patented diamond-shaped case
                 </span>
               </div>
               <div className="flex items-center space-x-3">
-                <div className="w-3 h-3 diamond-shape bg-amber-400"></div>
+                <div className="w-3 h-3 diamond-shape bg-[#C0A875]"></div>
                 <span className="text-foreground">
                   Dual integrated windows design
                 </span>
               </div>
               <div className="flex items-center space-x-3">
-                <div className="w-3 h-3 diamond-shape bg-amber-400"></div>
+                <div className="w-3 h-3 diamond-shape bg-[#C0A875]"></div>
                 <span className="text-foreground">
                   Personalization and engraving options
                 </span>

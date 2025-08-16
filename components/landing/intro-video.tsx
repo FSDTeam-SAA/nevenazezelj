@@ -1,37 +1,21 @@
 "use client";
 
 import { Volume2, VolumeOff } from "lucide-react";
-import React, { useState, useRef, useEffect } from "react";
+import React, { useState, useRef } from "react";
 
 export default function IntroVideo() {
-  const [isMuted, setIsMuted] = useState(false); // want unmuted by default
+  const [isMuted, setIsMuted] = useState(true);
   const videoRef = useRef<HTMLVideoElement>(null);
-
-  useEffect(() => {
-    const video = videoRef.current;
-    if (!video) return;
-
-    // Try to play unmuted
-    const playPromise = video.play();
-    if (playPromise !== undefined) {
-      playPromise.catch(() => {
-        // Autoplay with sound failed, fallback to muted
-        video.muted = false;
-        setIsMuted(false);
-        video.play().catch(() => {});
-      });
-    }
-  }, []);
 
   const toggleMute = () => {
     if (videoRef.current) {
-      videoRef.current.muted = !isMuted;
+      videoRef.current.muted = !videoRef.current.muted;
+      setIsMuted(videoRef.current.muted);
     }
-    setIsMuted(!isMuted);
   };
 
   return (
-    <section className="relative h-[50vh] md:h-[85vh] w-full">
+    <section className="relative h-[50vh] md:h-[calc(100vh-150px)] lg:h-[calc(100vh-110px)] w-full">
       <video
         ref={videoRef}
         className="h-full w-full object-cover relative z-20"

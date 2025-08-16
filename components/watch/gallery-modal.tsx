@@ -12,7 +12,7 @@ export function GalleryModal() {
   return (
     <Dialog>
       <DialogTrigger asChild>
-        <div className="text-black lg:rounded-md rounded-xs cursor-pointer lg:h-10 h-6 lg:w-10 w-6 bg-white flex items-center justify-center">
+        <div className="text-black cursor-pointer lg:h-10 h-6 lg:w-10 w-6 bg-white flex items-center justify-center">
           <Maximize className="lg:h-6 h-4 lg:w-6 w-4" />
         </div>
       </DialogTrigger>
