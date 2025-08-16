@@ -69,20 +69,20 @@ export default function Navbar() {
             <div className="md:space-y-4">
               <Link href="/" className="flex items-center justify-center">
                 <Image
-                  src="/images/logo-full.png"
+                  src="/images/effect-logo.png"
                   alt="Royalty"
                   width={1000}
                   height={1000}
-                  className="lg:h-20 h-20 lg:w-36 w-32"
+                  className="h-14 w-fit object-contain lg:mt-2"
                 />
               </Link>
               {/* Desktop navigation */}
-              <div className="hidden md:flex items-center space-x-8">
+              <div className="hidden md:flex items-center text-center justify-center space-x-8">
                 {navigationItems.map((item) => (
                   <Link
                     key={item.name}
                     href={item.href}
-                    className="text-white hover:text-[#b8bb9a] transition-colors duration-200 text-sm font-medium tracking-wide"
+                    className="text-white hover:text-[#b8bb9a] text-center transition-colors duration-200 text-sm font-medium tracking-wide"
                   >
                     {item.name}
                   </Link>
