@@ -17,7 +17,7 @@ export default function Founder() {
           >
             <Image
               src="/images/nevena.jpg"
-              alt="Nevena Žeželj, Founder of ROYALTY©"
+              alt="Nevena Žeželj, Founder of ROYALTY&copy;"
               width={500}
               height={600}
               className="w-full h-auto rounded-lg shadow-2xl object-cover"
@@ -42,7 +42,7 @@ export default function Founder() {
 
             {/* Paragraphs */}
             <p className="text-base sm:text-lg leading-relaxed text-muted-foreground mb-4 sm:mb-6">
-              ROYALTY© is founded by Nevena Žeželj, a former pilot, an
+              ROYALTY&copy; is founded by Nevena Žeželj, a former pilot, an
               anti-financial crime expert, and a philanthropist. ROYALTY was
               born out of her vision, and she is the creative force behind the
               brand.

@@ -114,7 +114,7 @@ export default function Footer() {
 
             {/* Copyright */}
             <div className="text-sm text-gray-400 text-center md:text-left">
-              © 2025 - ROYALTY® WATCHES ALL RIGHTS RESERVED
+              &copy; 2025 - ROYALTY® WATCHES ALL RIGHTS RESERVED
             </div>
           </div>
         </div>

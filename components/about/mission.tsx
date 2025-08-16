@@ -25,7 +25,7 @@ export default function Mission() {
           className="bg-primary p-4 sm:p-6 md:p-8 rounded-lg text-left sm:text-center"
         >
           <p className="text-base sm:text-lg md:text-xl font-medium leading-relaxed text-primary-foreground text-justify lg:text-center">
-            More than just a brand, ROYALTY© represents a mindset: it is founded
+            More than just a brand, ROYALTY&copy; represents a mindset: it is founded
             on the conviction that self-belief is the key to unlocking limitless
             potential. The founder, Ms. Nevena Žeželj, represents this
             philosophy through her journey in life. Overcoming numerous

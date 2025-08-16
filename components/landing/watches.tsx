@@ -14,7 +14,7 @@ export default function Watches() {
           </h2>
           <p className="text-sm lg:text-base text-justify lg:text-center">
             Introducing the Diamond King Collection the inaugural signature line
-            from ROYALTY, crafted to redefine luxury and precision. This
+            from ROYALTY 	&copy;, crafted to redefine luxury and precision. This
             collection marks the beginning of a new era in high-end timepieces,
             embodying elegance, innovation, and exclusivity. At the heart of
             this collection lies our unique, internationally patented design a

@@ -20,14 +20,14 @@ export default function Identity() {
               Brand Identity & Values
             </h2>
             <p className="text-base sm:text-lg leading-relaxed text-muted-foreground mb-4 sm:mb-6">
-              ROYALTY© embodies the principles of inclusiveness and the unique
+              ROYALTY&copy; embodies the principles of inclusiveness and the unique
               value of each individual. The brand passionately advocates for
               recognizing the inherent worth and uniqueness of every individual,
               irrespective of their heritage, faith, cultural identity,
               educational background, sexual orientation, or skin color.
             </p>
             <p className="text-base sm:text-lg leading-relaxed text-muted-foreground">
-              At its core, ROYALTY© celebrates the idea that every person is
+              At its core, ROYALTY&copy; celebrates the idea that every person is
               intrinsically valuable, unique, and deserving of feeling and being
               treated like royalty.
             </p>
@@ -58,7 +58,7 @@ export default function Identity() {
                   The lion symbol stands for confidence, strength, and
                   empowerment – qualities born of self-belief and owning
                   one&apos;s life story and identity. Paired with an elegant
-                  black and gold aesthetic, ROYALTY© exudes sophistication,
+                  black and gold aesthetic, ROYALTY&copy; exudes sophistication,
                   luxury, and timelessness.
                 </p>
               </div>

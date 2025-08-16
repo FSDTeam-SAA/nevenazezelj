@@ -12,7 +12,7 @@ export default function CustomerService() {
 
         {/* Description */}
         <p className="text-base sm:text-lg md:text-xl leading-relaxed mb-6 sm:mb-8 text-foreground/80">
-          At ROYALTY©, our Customer Service is not another logistical process
+          At ROYALTY&copy;, our Customer Service is not another logistical process
           but a commitment. We are devoted to our customers&apos; long-lasting
           satisfaction, bringing you the finest watches that are durable and
           will last a lifetime, along with treatment akin to that of royalty.
