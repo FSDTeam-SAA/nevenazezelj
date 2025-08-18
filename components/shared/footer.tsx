@@ -6,7 +6,7 @@ export default function Footer() {
     <footer className="py-8 lg:py-20">
       {/* Main footer content */}
       <div className="container mx-auto px-4 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
           {/* Main Menu */}
           <div className="space-y-4">
             <h3 className="text-sm font-semibold text-gray-400 uppercase tracking-wider">
@@ -25,17 +25,11 @@ export default function Footer() {
               >
                 MEET ROYALTY
               </Link>
-              <Link
-                href="/contact"
-                className="block text-gray-300 hover:text-white transition-colors"
-              >
-                Contact
-              </Link>
             </nav>
           </div>
 
           {/* Information */}
-          <div className="flex lg:justify-center">
+          {/* <div className="flex lg:justify-center">
             <div className="space-y-4">
               <h3 className="text-sm font-semibold text-gray-400 uppercase tracking-wider">
                 Information
@@ -61,7 +55,7 @@ export default function Footer() {
                 </Link>
               </nav>
             </div>
-          </div>
+          </div> */}
 
           {/* SSL Badge */}
           <div className="flex items-center  lg:justify-end">

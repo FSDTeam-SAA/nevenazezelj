@@ -33,16 +33,16 @@ export default function Navbar() {
                   <span className="sr-only">Open menu</span>
                 </Button>
               </SheetTrigger>
-              <SheetContent side="left" className="bg-gray-900 border-gray-800">
-                <div className="flex items-center justify-center mb-8">
+              <SheetContent side="left" className="bg-[#000000] border-[#000000]">
+                <div className="flex items-center justify-center mb-8 mt-4">
                   <div className="flex items-center justify-center">
                     <Link href="/" className="flex items-center justify-center">
                       <Image
-                        src="/images/logo-full.png"
+                        src="/images/effect-logo.png"
                         alt="Royalty"
                         width={1000}
                         height={1000}
-                        className="h-28 w-40"
+                        className="h-18 object-contain"
                       />
                     </Link>
                   </div>
@@ -72,7 +72,7 @@ export default function Navbar() {
                   alt="Royalty"
                   width={1000}
                   height={1000}
-                  className="h-14 w-fit object-contain md:mt-2"
+                  className="h-12 w-fit object-contain md:mt-2"
                 />
               </Link>
               {/* Desktop navigation */}
