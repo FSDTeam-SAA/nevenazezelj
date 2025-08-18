@@ -5,7 +5,12 @@ import Link from "next/link";
 import { useState } from "react";
 
 import { Button } from "@/components/ui/button";
-import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
+import {
+  Sheet,
+  SheetContent,
+  SheetDescription,
+  SheetTrigger,
+} from "@/components/ui/sheet";
 import Image from "next/image";
 
 export default function Navbar() {
@@ -33,7 +38,11 @@ export default function Navbar() {
                   <span className="sr-only">Open menu</span>
                 </Button>
               </SheetTrigger>
-              <SheetContent side="left" className="bg-[#000000] border-[#000000]">
+              <SheetContent
+                side="left"
+                className="bg-[#000000] border-[#000000]"
+              >
+                <SheetDescription className="text-white sr-only">Menu</SheetDescription>
                 <div className="flex items-center justify-center mb-8 mt-4">
                   <div className="flex items-center justify-center">
                     <Link href="/" className="flex items-center justify-center">

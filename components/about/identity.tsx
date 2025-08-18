@@ -40,7 +40,7 @@ export default function Identity() {
             transition={{ duration: 0.5, ease: "easeOut" }}
             viewport={{ once: true, amount: 0.2 }}
           >
-            <Card className="p-6 sm:p-8 bg-[#C0A875]">
+            <Card className="p-6 sm:p-8 bg-[#C0A875] border-none">
               <div className="text-center">
                 <div className="flex justify-center">
                   <Image
@@ -51,10 +51,10 @@ export default function Identity() {
                     className="w-32 sm:w-40 lg:w-52 max-w-full aspect-square object-cover"
                   />
                 </div>
-                <h3 className="text-xl sm:text-2xl font-bold mb-3 sm:mb-4">
+                <h3 className="text-xl sm:text-2xl font-bold mb-3 sm:mb-4 text-white">
                   The Lion Symbol
                 </h3>
-                <p className="text-sm sm:text-base text-foreground leading-relaxed">
+                <p className="text-sm sm:text-base text-background leading-relaxed">
                   The lion symbol stands for confidence, strength, and
                   empowerment – qualities born of self-belief and owning
                   one&apos;s life story and identity. Paired with an elegant
