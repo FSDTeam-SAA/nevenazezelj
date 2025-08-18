@@ -14,7 +14,6 @@ export default function Navbar() {
   const navigationItems = [
     { name: "HOME", href: "/" },
     { name: "MEET ROYALTY", href: "/about-us" },
-    { name: "CONTACT US", href: "/contact" },
   ];
 
   return (

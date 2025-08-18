@@ -1,9 +1,9 @@
 export const watches = [
   {
     id: 1,
-    title: "Aereus TG 379",
-    slug: "monarch-t-379",
-    video: "/videos/watch1.mp4",
+    title: "Aureus TG 379",
+    slug: "aureus-tg-379",
+    video: "/videos/gold.mp4",
     images: ["/images/gold1.jpg", "/images/gold2.jpg"],
     model: "/model/rolex1.glb",
     price: 17000,
@@ -55,8 +55,8 @@ export const watches = [
   {
     id: 2,
     title: "Monarch T 379",
-    slug: "aereus-tg-379",
-    video: "/videos/watch1.mp4",
+    slug: "monarch-t-379",
+    video: "/videos/silver.mp4",
     images: ["/images/silver1.jpg", "/images/silver2.jpg"],
     model: "/model/rolex1.glb",
     price: 17000,

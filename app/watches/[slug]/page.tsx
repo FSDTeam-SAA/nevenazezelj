@@ -16,7 +16,7 @@ export default async function WatchDetailsPage({
     <div className="bg-white lg:pb-20">
       <div className="container grid grid-cols-1 lg:grid-cols-3 lg:gap-8 gap-12">
         <div className="lg:col-span-2">
-          <Gallery images={watch?.images || []} />
+          <Gallery images={watch?.images || [] } video={watch?.video || ""} />
         </div>
         <div className="lg:col-span-1">
           <Description

@@ -5,12 +5,18 @@ import React from "react";
 import { ModelModal } from "./model-modal";
 import { GalleryModal } from "./gallery-modal";
 
-export default function Gallery({ images }: { images: string[] }) {
+export default function Gallery({
+  images,
+  video,
+}: {
+  images: string[];
+  video: string;
+}) {
   return (
     <div className="lg:space-y-4 space-y-2">
       <div className="relative">
-        <video autoPlay loop muted >
-          <source src="/videos/watch1.mp4" type="video/mp4" />
+        <video autoPlay loop muted className="w-full">
+          <source src={video} type="video/mp4" />
         </video>
         <div className="absolute top-1/2 left-5 transform -translate-y-1/2 space-y-2">
           <ModelModal />
