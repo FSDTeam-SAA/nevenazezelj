@@ -3,7 +3,7 @@ import React from "react";
 
 export default function Watches() {
   return (
-    <section className="lg:py-24 py-10 bg-muted/30">
+    <section className="lg:py-24 py-10">
       <div className="container">
         {/* Section Heading */}
         <div className="text-center mb-16">

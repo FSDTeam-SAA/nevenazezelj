@@ -27,7 +27,7 @@ function useIsMobile() {
 
 function WatchModel({ onModelLoaded }: { onModelLoaded: () => void }) {
   const pathname = usePathname();
-  const silver = pathname === "/watches/aereus-tg-379";
+  const silver = pathname === "/watches/monarch-t-379";
   const isMobile = useIsMobile();
   const { scene } = useGLTF(silver ? "/model/silver.glb" : "/model/gold.glb");
 
