@@ -26,7 +26,7 @@ export default function Watches() {
           {watches.map((watch) => (
             <div key={watch.id}>
               <Link href={`/watches/${watch.slug}`}>
-                <div className="flex items-center justify-center bg-[#efefef] overflow-hidden group">
+                <div className="flex items-center justify-center overflow-hidden group">
                   <Image
                     src={watch.images[0]}
                     alt={watch.title}

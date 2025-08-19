@@ -20,7 +20,7 @@ export default function Gallery({
         </video>
         <div className="absolute top-1/2 left-5 transform -translate-y-1/2 space-y-2">
           <ModelModal />
-          <GalleryModal />
+          <GalleryModal video={video} photos={images} />
         </div>
       </div>
       <div className="grid grid-cols-2 gap-4">
