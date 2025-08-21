@@ -1,6 +1,4 @@
 import React from "react";
-import { Button } from "../ui/button";
-import { Phone } from "lucide-react";
 import {
   Accordion,
   AccordionContent,
