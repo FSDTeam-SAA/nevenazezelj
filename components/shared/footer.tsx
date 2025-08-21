@@ -3,75 +3,7 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <footer className="py-8 lg:py-20">
-      {/* Main footer content */}
-      <div className="container mx-auto px-4 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
-          {/* Main Menu */}
-          <div className="space-y-4">
-            <h3 className="text-sm font-semibold text-gray-400 uppercase tracking-wider">
-              Main Menu
-            </h3>
-            <nav className="space-y-3">
-              <Link
-                href="/"
-                className="block text-gray-300 hover:text-white transition-colors"
-              >
-                Home
-              </Link>
-              <Link
-                href="/about-us"
-                className="block text-gray-300 hover:text-white transition-colors"
-              >
-                MEET ROYALTY
-              </Link>
-            </nav>
-          </div>
-
-          {/* Information */}
-          {/* <div className="flex lg:justify-center">
-            <div className="space-y-4">
-              <h3 className="text-sm font-semibold text-gray-400 uppercase tracking-wider">
-                Information
-              </h3>
-              <nav className="space-y-3">
-                <Link
-                  href="/terms"
-                  className="block text-gray-300 hover:text-white transition-colors"
-                >
-                  Terms of Service
-                </Link>
-                <Link
-                  href="/privacy"
-                  className="block text-gray-300 hover:text-white transition-colors"
-                >
-                  Privacy Policy
-                </Link>
-                <Link
-                  href="/shipping"
-                  className="block text-gray-300 hover:text-white transition-colors"
-                >
-                  Shipping Policy
-                </Link>
-              </nav>
-            </div>
-          </div> */}
-
-          {/* SSL Badge */}
-          <div className="flex items-center  lg:justify-end">
-            <div className="w-24 h-24 rounded-full flex items-center justify-center">
-              <Image
-                src="/images/ssl.png"
-                alt="ssl badge"
-                width={1000}
-                height={1000}
-                className="w-full aspect-square object-cover"
-              />
-            </div>
-          </div>
-        </div>
-      </div>
-
+    <footer className="py-8 lg:py-12">
       {/* Bottom section */}
       <div className="border-t border-gray-800">
         <div className="container mx-auto px-4 py-6">
@@ -107,7 +39,7 @@ export default function Footer() {
             </div>
 
             {/* Copyright */}
-            <div className="text-sm text-gray-400 text-center md:text-left">
+            <div className="text-sm opacity-90 text-center md:text-left">
               &copy; 2025 - ROYALTY® WATCHES ALL RIGHTS RESERVED
             </div>
           </div>

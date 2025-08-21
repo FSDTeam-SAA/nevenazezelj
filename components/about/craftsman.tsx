@@ -27,7 +27,7 @@ export default function Craftsman() {
               <span className="text-white font-bold">Ti</span>
             </div>
             <h3 className="font-semibold text-lg mb-1 sm:mb-2">Titanium</h3>
-            <p className="text-sm sm:text-base text-muted-foreground">
+            <p className="text-sm sm:text-base">
               Lightweight and durable
             </p>
           </Card>
@@ -37,7 +37,7 @@ export default function Craftsman() {
               <span className="text-white font-bold">Pt</span>
             </div>
             <h3 className="font-semibold text-lg mb-1 sm:mb-2">Platinum</h3>
-            <p className="text-sm sm:text-base text-muted-foreground">
+            <p className="text-sm sm:text-base">
               Premium precious metal
             </p>
           </Card>
@@ -47,7 +47,7 @@ export default function Craftsman() {
               <span className="text-white font-bold">18k</span>
             </div>
             <h3 className="font-semibold text-lg mb-1 sm:mb-2">18k Gold</h3>
-            <p className="text-sm sm:text-base text-muted-foreground">
+            <p className="text-sm sm:text-base">
               Luxury and elegance
             </p>
           </Card>
@@ -61,7 +61,7 @@ export default function Craftsman() {
             <h3 className="font-semibold text-lg mb-1 sm:mb-2">
               Sapphire Glass
             </h3>
-            <p className="text-sm sm:text-base text-muted-foreground">
+            <p className="text-sm sm:text-base">
               Exceptional clarity and durability
             </p>
           </Card>
@@ -74,7 +74,7 @@ export default function Craftsman() {
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5, ease: "easeOut" }}
             viewport={{ once: true, amount: 0.2 }}
-            className="text-base lg:text-2xl leading-relaxed text-muted-foreground max-w-4xl mx-auto mb-6"
+            className="text-base lg:text-2xl leading-relaxed max-w-4xl mx-auto mb-6"
           >
             Our selection of materials includes the finest materials such as
             titanium, platinum, 18k gold, and rhodium plating, all chosen for
@@ -87,7 +87,7 @@ export default function Craftsman() {
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5, ease: "easeOut" }}
             viewport={{ once: true, amount: 0.2 }}
-            className="text-base lg:text-2xl leading-relaxed text-muted-foreground max-w-4xl mx-auto"
+            className="text-base lg:text-2xl leading-relaxed max-w-4xl mx-auto"
           >
             Our watch offerings feature both automatic and quartz movements,
             catering to diverse preferences while maintaining our high standards

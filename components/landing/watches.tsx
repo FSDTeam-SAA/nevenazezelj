@@ -10,10 +10,10 @@ export default function Watches() {
       <div className="container">
         <div className="text-center text-[#C0A875] max-w-3xl mx-auto lg:space-y-5 space-y-3">
           <h2 className="lg:text-5xl text-2xl font-bold uppercase">
-            The Diamond King
+            The Diamond QUEEN
           </h2>
           <p className="text-sm lg:text-base text-justify lg:text-center">
-            Introducing the Diamond King Collection the inaugural signature line
+            Introducing the Diamond Queen Collection the inaugural signature line
             from ROYALTY 	&copy;, crafted to redefine luxury and precision. This
             collection marks the beginning of a new era in high-end timepieces,
             embodying elegance, innovation, and exclusivity. At the heart of
@@ -26,7 +26,7 @@ export default function Watches() {
           {watches.map((watch) => (
             <div key={watch.id}>
               <Link href={`/watches/${watch.slug}`}>
-                <div className="flex items-center justify-center bg-[#efefef] overflow-hidden group">
+                <div className="flex items-center justify-center overflow-hidden group">
                   <Image
                     src={watch.images[0]}
                     alt={watch.title}
@@ -37,7 +37,7 @@ export default function Watches() {
                 </div>
               </Link>
               <div className="lg:pt-5 pt-2 space-y-1">
-                <p className="text-[#C0A875] text-sm">DIAMOND KING</p>
+                <p className="text-[#C0A875] text-sm">DIAMOND QUEEN</p>
                 <h3 className="lg:text-2xl text-xl font-semibold text-[#C0A875]">
                   {watch.title}
                 </h3>

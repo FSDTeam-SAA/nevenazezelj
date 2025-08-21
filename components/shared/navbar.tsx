@@ -9,6 +9,7 @@ import {
   Sheet,
   SheetContent,
   SheetDescription,
+  SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet";
 import Image from "next/image";
@@ -42,6 +43,7 @@ export default function Navbar() {
                 side="left"
                 className="bg-[#000000] border-[#000000]"
               >
+                <SheetTitle className="text-white sr-only">Menu</SheetTitle>
                 <SheetDescription className="text-white sr-only">Menu</SheetDescription>
                 <div className="flex items-center justify-center mb-8 mt-4">
                   <div className="flex items-center justify-center">
@@ -51,7 +53,7 @@ export default function Navbar() {
                         alt="Royalty"
                         width={1000}
                         height={1000}
-                        className="h-18 object-contain"
+                        className="h-12 object-contain"
                       />
                     </Link>
                   </div>
@@ -81,7 +83,7 @@ export default function Navbar() {
                   alt="Royalty"
                   width={1000}
                   height={1000}
-                  className="h-12 w-fit object-contain md:mt-2"
+                  className="h-14 w-fit object-contain md:mt-2"
                 />
               </Link>
               {/* Desktop navigation */}
