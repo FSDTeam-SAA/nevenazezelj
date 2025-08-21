@@ -7,7 +7,7 @@ export default function Home() {
     <main>
       <IntroVideo />
       <Watches />
-      <Tags />
+      {/* <Tags /> */}
     </main>
   );
 }

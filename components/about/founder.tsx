@@ -41,20 +41,20 @@ export default function Founder() {
             </h3>
 
             {/* Paragraphs */}
-            <p className="text-base sm:text-lg leading-relaxed text-muted-foreground mb-4 sm:mb-6">
+            <p className="text-base sm:text-lg leading-relaxed mb-4 sm:mb-6">
               ROYALTY&copy; is founded by Nevena Žeželj, a former pilot, an
               anti-financial crime expert, and a philanthropist. ROYALTY was
               born out of her vision, and she is the creative force behind the
               brand.
             </p>
 
-            <p className="text-base sm:text-lg leading-relaxed text-muted-foreground mb-4 sm:mb-6">
+            <p className="text-base sm:text-lg leading-relaxed mb-4 sm:mb-6">
               To Ms. Žeželj, as a former pilot, her watch was more than an
               instrument and jewellery. Up in the sky, where every second is
               precious, the watch was a lifeline and navigation tool.
             </p>
 
-            <p className="text-base sm:text-lg leading-relaxed text-muted-foreground mb-4 sm:mb-6">
+            <p className="text-base sm:text-lg leading-relaxed mb-4 sm:mb-6">
               Nevena is inspired by people and their stories. She has a passion
               for creating beautiful, personal pieces that are both timeless and
               elegant. Her main inspiration is how others feel when wearing her
@@ -63,7 +63,7 @@ export default function Founder() {
             </p>
 
             {/* Quote / Blockquote */}
-            <blockquote className="border-l-4 border-[#C0A875] pl-4 sm:pl-6 italic text-base sm:text-lg text-muted-foreground">
+            <blockquote className="border-l-4 border-[#C0A875] pl-4 sm:pl-6 italic text-base sm:text-lg">
               &quot;Helping others feel beautiful for who they are makes me
               truly happy. I love seeing people feel empowered.&quot;
               <cite className="block mt-2 font-semibold text-foreground">

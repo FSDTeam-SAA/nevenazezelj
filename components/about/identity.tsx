@@ -19,14 +19,14 @@ export default function Identity() {
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6 md:mb-8 text-foreground">
               Brand Identity & Values
             </h2>
-            <p className="text-base sm:text-lg leading-relaxed text-muted-foreground mb-4 sm:mb-6">
+            <p className="text-base sm:text-lg leading-relaxed  mb-4 sm:mb-6">
               ROYALTY&copy; embodies the principles of inclusiveness and the unique
               value of each individual. The brand passionately advocates for
               recognizing the inherent worth and uniqueness of every individual,
               irrespective of their heritage, faith, cultural identity,
               educational background, sexual orientation, or skin color.
             </p>
-            <p className="text-base sm:text-lg leading-relaxed text-muted-foreground">
+            <p className="text-base sm:text-lg leading-relaxed">
               At its core, ROYALTY&copy; celebrates the idea that every person is
               intrinsically valuable, unique, and deserving of feeling and being
               treated like royalty.

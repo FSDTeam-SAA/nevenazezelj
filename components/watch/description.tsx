@@ -40,14 +40,6 @@ export default function Description({ watch }: { watch: Watch }) {
       </p>
       <p className="text-base">{watch?.descriptionTwo}</p>
       <div className="space-y-2">
-        <div className="flex items-center gap-1 h-12">
-          <Button className="bg-[#3a3935] hover:bg-[#3a3935] cursor-pointer text-foreground text-lg w-[90%] h-full uppercase tracking-wide rounded-xs">
-            Inquire by phone
-          </Button>
-          <Button className="bg-[#3a3935] hover:bg-[#3a3935] cursor-pointer text-foreground w-[10%] h-full rounded-xs">
-            <Phone />
-          </Button>
-        </div>
       </div>
       <div className="">
         <Accordion
