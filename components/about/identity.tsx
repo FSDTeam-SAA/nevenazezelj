@@ -24,7 +24,7 @@ export default function Identity() {
               value of each individual. The brand passionately advocates for
               recognizing the inherent worth and uniqueness of every individual,
               irrespective of their heritage, faith, cultural identity,
-              educational background, sexual orientation, or skin color.
+              educational background, or skin color, etc.
             </p>
             <p className="text-base sm:text-lg leading-relaxed">
               At its core, ROYALTY&copy; celebrates the idea that every person is

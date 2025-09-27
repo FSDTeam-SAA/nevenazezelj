@@ -20,12 +20,13 @@ export default function Navbar() {
   const navigationItems = [
     { name: "HOME", href: "/" },
     { name: "MEET ROYALTY", href: "/about-us" },
+    { name: "OUR WATCHES", href: "/watches" },
   ];
 
   return (
-    <nav className="w-full bg-[#000000] border-b border-gray-800 sticky top-0 z-50">
+    <nav className="w-full bg-[#000000] border-b border-gray-800 sticky top-0 z-50 py-2">
       <div className="container lg:pb-5 py-1 md:py-0 md:pb-3">
-        <div className="flex items-center justify-between md:justify-center">
+        <div className="flex items-center justify-between md:justify-center relative">
           {/* Mobile menu button */}
           <div className="md:hidden order-2 lg:order-1">
             <Sheet open={isOpen} onOpenChange={setIsOpen}>
@@ -35,7 +36,7 @@ export default function Navbar() {
                   size="lg"
                   className="text-white hover:bg-gray-800"
                 >
-                  <Menu className="!h-8 !w-8 text-[#C0A875]" />
+                  <Menu className="!h-6 !w-6 text-white" />
                   <span className="sr-only">Open menu</span>
                 </Button>
               </SheetTrigger>
@@ -44,7 +45,9 @@ export default function Navbar() {
                 className="bg-[#000000] border-[#000000]"
               >
                 <SheetTitle className="text-white sr-only">Menu</SheetTitle>
-                <SheetDescription className="text-white sr-only">Menu</SheetDescription>
+                <SheetDescription className="text-white sr-only">
+                  Menu
+                </SheetDescription>
                 <div className="flex items-center justify-center mb-8 mt-4">
                   <div className="flex items-center justify-center">
                     <Link href="/" className="flex items-center justify-center">
@@ -74,8 +77,7 @@ export default function Navbar() {
             </Sheet>
           </div>
 
-          {/* Logo - centered on mobile, left-aligned on desktop */}
-          <div className="flex md:justify-center order-1 lg:order-2">
+          <div className="flex justify-center order-1 lg:order-2">
             <div className="md:space-y-4">
               <Link href="/" className="flex items-center justify-center">
                 <Image
@@ -83,7 +85,7 @@ export default function Navbar() {
                   alt="Royalty"
                   width={1000}
                   height={1000}
-                  className="h-14 w-fit object-contain md:mt-2"
+                  className="h-14 w-fit object-contain md:mt-2 absolute left-1/2 md:left-0 transform -translate-x-1/2 md:relative md:translate-x-0"
                 />
               </Link>
               {/* Desktop navigation */}
@@ -100,8 +102,6 @@ export default function Navbar() {
               </div>
             </div>
           </div>
-
-          {/* Spacer for mobile to keep logo centered */}
         </div>
       </div>
     </nav>

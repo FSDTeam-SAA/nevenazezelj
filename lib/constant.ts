@@ -1,7 +1,7 @@
 export const watches = [
   {
     id: 1,
-    title: "Aureus TG 379",
+    title: "Aureus SG 379",
     slug: "aureus-tg-379",
     video: "/videos/gold.mp4",
     images: ["/images/gold1.jpg", "/images/gold2.jpg"],
@@ -54,7 +54,7 @@ export const watches = [
   },
   {
     id: 2,
-    title: "Monarch T 379",
+    title: "Monarch S 379",
     slug: "monarch-t-379",
     video: "/videos/silver.mp4",
     images: ["/images/silver1.jpg", "/images/silver2.jpg"],
