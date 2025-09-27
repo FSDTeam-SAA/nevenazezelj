@@ -17,11 +17,16 @@ export default function Hero() {
         <h1 className="lg:text-6xl text-3xl font-bold lg:mb-6 mb-3">
           ROYALTY &copy;
         </h1>
-        <p className="lg:text-xl font-light leading-relaxed max-w-3xl mx-auto px-4 md:px-10 lg:px-0">
-          More than just a brand, ROYALTY&copy; represents a mindset founded on the
-          conviction that self-belief is the key to unlocking limitless
-          potential.
-        </p>
+        <ol className="lg:text-xl font-light leading-relaxed max-w-3xl mx-auto px-4 md:px-10 lg:px-0 list-decimal list-inside">
+          <li>
+            Every human being is valuable of love and respect and to be treated as Royalty.
+          </li>
+          <li>
+            More than just a brand, ROYALTY&copy; represents a mindset founded
+            on the conviction that self-belief is the key to unlocking limitless
+            potential.
+          </li>
+        </ol>
       </div>
     </section>
   );

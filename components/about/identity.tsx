@@ -51,7 +51,7 @@ export default function Identity() {
                     className="w-32 sm:w-40 lg:w-52 max-w-full aspect-square object-cover"
                   />
                 </div>
-                <h3 className="text-xl sm:text-2xl font-bold mb-3 sm:mb-4 text-white">
+                <h3 className="text-xl sm:text-2xl font-extrabold mb-3 sm:mb-4">
                   The Lion Symbol
                 </h3>
                 <p className="text-sm sm:text-base text-background leading-relaxed">
@@ -59,7 +59,7 @@ export default function Identity() {
                   empowerment – qualities born of self-belief and owning
                   one&apos;s life story and identity. Paired with an elegant
                   black and gold aesthetic, ROYALTY&copy; exudes sophistication,
-                  luxury, and timelessness.
+                  elegance, and timelessness.
                 </p>
               </div>
             </Card>
