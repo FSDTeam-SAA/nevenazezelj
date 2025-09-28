@@ -56,13 +56,13 @@ export default function Watches() {
 
             <ul className="list-disc list-inside text-lg text-foreground space-y-2">
               <li>
-                <strong>Upper window:</strong> Symmetrical in form, displays the
+                <strong>Upper window:</strong> Hexagonal in form, displays the
                 time with high clarity and precision.
               </li>
               <li>
                 <strong>Lower window:</strong> Dedicated space initially showing
                 the watch model&apos;s name (standard feature across DIAMOND
-                KING collection).
+                KING & DIAMOND QUEEN collection).
               </li>
               <li>
                 <strong>Personalization:</strong> The lower window may contain
