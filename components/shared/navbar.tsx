@@ -20,7 +20,7 @@ export default function Navbar() {
   const navigationItems = [
     { name: "HOME", href: "/" },
     { name: "MEET ROYALTY", href: "/about-us" },
-    { name: "OUR WATCHES", href: "/watches" },
+    { name: "OUR WATCHES", href: "/our-watches" },
   ];
 
   return (
