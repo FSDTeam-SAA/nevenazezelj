@@ -1,6 +1,5 @@
 import React from "react";
 import { Card } from "../ui/card";
-import { Diamond } from "lucide-react";
 import * as motion from "motion/react-client";
 import Image from "next/image";
 
