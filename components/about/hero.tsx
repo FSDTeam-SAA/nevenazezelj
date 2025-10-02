@@ -3,7 +3,7 @@ import React from "react";
 
 export default function Hero() {
   return (
-    <section className="luxury-gradient text-white py-8 lg:py-20">
+    <section className="text-white py-8 lg:py-20">
       <div className="max-w-4xl mx-auto text-center">
         <div className="lg:mb-8 mb-5">
           <Image
@@ -17,7 +17,7 @@ export default function Hero() {
         <h1 className="lg:text-6xl text-3xl font-bold lg:mb-6 mb-3">
           ROYALTY &copy;
         </h1>
-        <ol className="lg:text-xl font-light leading-relaxed max-w-3xl mx-auto px-4 md:px-10 lg:px-0 list-decimal list-inside">
+        <ul className="lg:text-xl font-light leading-relaxed max-w-3xl mx-auto px-4 md:px-10 lg:px-0 list-disc list-inside text-start">
           <li>
             Every human being is valuable of love and respect and to be treated as Royalty.
           </li>
@@ -26,7 +26,7 @@ export default function Hero() {
             on the conviction that self-belief is the key to unlocking limitless
             potential.
           </li>
-        </ol>
+        </ul>
       </div>
     </section>
   );

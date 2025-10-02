@@ -27,7 +27,7 @@ export default function Craftsman() {
               alt="stainless steel image"
               width={400}
               height={200}
-              className="w-full h-28 sm:h-40 object-cover rounded-t-xl"
+              className="w-full h-32 sm:h-40 object-cover rounded-t-xl"
             />
             <h3 className="font-semibold text-lg">Stainless Steel</h3>
             <p className="text-sm sm:text-base">Strong and durable</p>
@@ -39,7 +39,7 @@ export default function Craftsman() {
               alt="stainless steel image"
               width={400}
               height={200}
-              className="w-full h-28 sm:h-40 object-cover rounded-t-xl"
+              className="w-full h-32 sm:h-40 object-cover rounded-t-xl"
             />
             <h3 className="font-semibold text-lg mb-1 sm:mb-2">Titanium</h3>
             <p className="text-sm sm:text-base">Lightweight and durable</p>
@@ -51,7 +51,7 @@ export default function Craftsman() {
               alt="stainless steel image"
               width={400}
               height={200}
-              className="w-full h-28 sm:h-40 object-cover rounded-t-xl"
+              className="w-full h-32 sm:h-40 object-cover rounded-t-xl"
             />
             <h3 className="font-semibold text-lg mb-1 sm:mb-2">Platinum</h3>
             <p className="text-sm sm:text-base">Premium precious metal</p>
@@ -63,10 +63,34 @@ export default function Craftsman() {
               alt="stainless steel image"
               width={400}
               height={200}
-              className="w-full h-28 sm:h-40 object-cover rounded-t-xl"
+              className="w-full h-32 sm:h-40 object-cover rounded-t-xl"
             />
             <h3 className="font-semibold text-lg mb-1 sm:mb-2">18k Gold</h3>
-            <p className="text-sm sm:text-base">Luxury and elegance</p>
+            <p className="text-sm sm:text-base">Sophistication and elegance</p>
+          </Card>
+
+          <Card className="text-center hover:shadow-lg transition-shadow p-0 gap-2 pb-4">
+            <Image
+              src="/images/paladium.jpg"
+              alt="stainless steel image"
+              width={400}
+              height={200}
+              className="w-full h-32 sm:h-40 object-cover rounded-t-xl"
+            />
+            <h3 className="font-semibold text-lg mb-1 sm:mb-2">Paladium</h3>
+            <p className="text-sm sm:text-base">Premium precious metal</p>
+          </Card>
+
+          <Card className="text-center hover:shadow-lg transition-shadow p-0 gap-2 pb-4">
+            <Image
+              src="/images/leather.jpg"
+              alt="stainless steel image"
+              width={400}
+              height={200}
+              className="w-full h-32 sm:h-40 object-cover rounded-t-xl"
+            />
+            <h3 className="font-semibold text-lg mb-1 sm:mb-2">Leather</h3>
+            <p className="text-sm sm:text-base">Classic and comfortable</p>
           </Card>
 
           <Card className="text-center hover:shadow-lg transition-shadow p-0 gap-2 pb-4">
@@ -75,7 +99,7 @@ export default function Craftsman() {
               alt="stainless steel image"
               width={400}
               height={200}
-              className="w-full h-28 sm:h-40 object-cover rounded-t-xl"
+              className="w-full h-32 sm:h-40 object-cover rounded-t-xl"
             />
             <h3 className="font-semibold text-lg mb-1 sm:mb-2">
               Sapphire Glass
@@ -87,15 +111,20 @@ export default function Craftsman() {
 
           <Card className="text-center hover:shadow-lg transition-shadow p-0 gap-2 pb-4">
             <Image
-              src="/images/leather.jpg"
+              src="/images/rhodium.jpg"
               alt="stainless steel image"
               width={400}
               height={200}
-              className="w-full h-28 sm:h-40 object-cover rounded-t-xl"
+              className="w-full h-32 sm:h-40 object-cover rounded-t-xl"
             />
-            <h3 className="font-semibold text-lg mb-1 sm:mb-2">Leather</h3>
-            <p className="text-sm sm:text-base">Classic and comfortable</p>
+            <h3 className="font-semibold text-lg mb-1 sm:mb-2">
+              Rhodium Plating
+            </h3>
+            <p className="text-sm sm:text-base">
+              Premium precious metal
+            </p>
           </Card>
+
         </motion.div>
         {/* Description Text */}
         <div className="mt-12 sm:mt-16 text-center">
@@ -106,8 +135,8 @@ export default function Craftsman() {
             viewport={{ once: true, amount: 0.2 }}
             className="text-base lg:text-2xl leading-relaxed max-w-4xl mx-auto mb-6"
           >
-            Our selection of materials includes the finest materials such as
-            titanium, platinum, 18k gold, and rhodium plating, all chosen for
+            Our selection of materials includes the finest materials such as stainless steel,
+            titanium, platinum, paladium, 18k gold, and rhodium plating, leather, etc all chosen for
             their superior quality and longevity. We incorporate premium
             sapphire glass into every watch, providing exceptional clarity and
             durability.
@@ -119,7 +148,7 @@ export default function Craftsman() {
             viewport={{ once: true, amount: 0.2 }}
             className="text-base lg:text-2xl leading-relaxed max-w-4xl mx-auto"
           >
-            Our watch offerings feature both automatic and quartz movements,
+            Our watch offerings features such as automatic, quartz and solar quartz movements,
             catering to diverse preferences while maintaining our high standards
             of accuracy, reliability, and craftsmanship.
           </motion.p>
