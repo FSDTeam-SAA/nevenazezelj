@@ -11,9 +11,9 @@ export default function Watches() {
             Our Watches
           </h2>
           <p className="lg:text-xl text-base text-justify lg:text-center leading-relaxed text-foreground/80">
-            ROYALTY&copy; is a brand made for today&apos;s visionaries and leaders
-            who are perfectionists and passionate. Elegant, empowering, and
-            outstanding design make up a line of high-quality watches. Each
+            ROYALTY&copy; is a brand made for today&apos;s visionaries and
+            leaders who are perfectionists and passionate. Elegant, empowering,
+            and outstanding design make up a line of high-quality watches. Each
             detail is carefully designed in our German headquarters by our
             founder. Our watch making operates under the strict regulations of
             the SWISS MADE convention, which accurately complies with the

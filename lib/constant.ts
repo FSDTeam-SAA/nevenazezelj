@@ -121,7 +121,7 @@ export const aboutData = [
     id: 2,
     title: "Logo Symbol explained",
     description:
-      "Our lion symbol represents the confidence and power that comes from believing in yourself, and our black and gold aesthetic exudes elegance and luxury. But more than that, ROYALTY is a mindset – it's about owning your power and embracing your potential!",
+      "Our lion symbol represents the confidence and power that comes from believing in yourself, and our black and gold aesthetic exudes elegance and sophistication. But more than that, ROYALTY is a mindset – it's about owning your power and embracing your potential!",
     btnText: "Find Out More",
     btnLink: "#",
     imageUrl: "/images/logo-full.png",
