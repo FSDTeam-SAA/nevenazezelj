@@ -6,14 +6,14 @@ export default function Founder() {
   return (
     <section className="px-4 sm:px-6 lg:px-8 py-12 lg:py-24">
       <div className="max-w-6xl mx-auto">
-        <div className="grid md:grid-cols-2 gap-10 lg:gap-16 items-center">
+        <div className="grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
           {/* Image */}
           <motion.div
             initial={{ opacity: 0, x: -200 }} // start from left
             whileInView={{ opacity: 1, x: 0 }} // animate to normal position
             transition={{ duration: 0.5, ease: "easeOut" }}
             viewport={{ once: true, amount: 0.2 }}
-            className="order-2 md:order-1"
+            className="order-2 lg:order-1"
           >
             <Image
               src="/images/nevena.jpg"
@@ -31,7 +31,7 @@ export default function Founder() {
             whileInView={{ opacity: 1, x: 0 }} // animate to normal position
             transition={{ duration: 0.5, ease: "easeOut" }}
             viewport={{ once: true, amount: 0.2 }}
-            className="order-1 md:order-2"
+            className="order-1 lg:order-2"
           >
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 sm:mb-8 text-foreground">
               Our Founder
