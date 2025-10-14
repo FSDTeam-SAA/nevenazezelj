@@ -26,7 +26,7 @@ export default function Watches() {
         </div>
 
         {/* Grid with Image and Text */}
-        <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
+        <div className="grid lg:grid-cols-2 gap-12 items-center mb-16">
           {/* Image */}
           <div>
             <Image
