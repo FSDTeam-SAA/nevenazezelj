@@ -3,6 +3,7 @@ import "./globals.css";
 import { Roboto } from "next/font/google";
 import Navbar from "@/components/shared/navbar";
 import Footer from "@/components/shared/footer";
+import WelcomePopup from "@/components/shared/welcome-popup";
 
 const roboto = Roboto({
   weight: ["400", "500", "600", "700", "900"],
@@ -22,10 +23,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${roboto.className} antialiased`}>
+        <WelcomePopup />
         <Navbar />
         {children}
         <Footer />
       </body>
     </html>
   );
-} 
+}
