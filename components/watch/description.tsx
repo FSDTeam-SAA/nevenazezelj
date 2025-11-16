@@ -56,7 +56,7 @@ export default function Description({ watch }: { watch: Watch }) {
                   <p className="uppercase lg:text-sm text-[#3a3935] font-medium">
                     {movement.title}
                   </p>
-                  <ul className="text-[#3a3935]/70 leading-snug tracking-wide text-justify space-y-1">
+                  <ul className="text-[#3a3935]/70 leading-snug tracking-wide space-y-1">
                     {movement.feature.map((item, index) => (
                       <li key={index} className="text-sm font-medium">
                         {item}
@@ -79,7 +79,7 @@ export default function Description({ watch }: { watch: Watch }) {
                   <p className="uppercase lg:text-sm text-[#3a3935] font-medium">
                     {feature.title}
                   </p>
-                  <ul className="text-[#3a3935]/70 leading-snug tracking-wide text-justify space-y-1">
+                  <ul className="text-[#3a3935]/70 leading-snug tracking-wide space-y-1">
                     {feature.feature.map((item, index) => (
                       <li key={index} className="text-sm font-medium">
                         {item}
@@ -109,7 +109,7 @@ export default function Description({ watch }: { watch: Watch }) {
               Personalization
             </AccordionTrigger>
             <AccordionContent className="flex flex-col gap-4 text-balance">
-              <p className="lg:text-base text-[#3a3935]/70 leading-snug tracking-wide text-justify">
+              <p className="lg:text-base text-[#3a3935]/70 leading-snug tracking-wide">
                 Make your ROYALTY© timepiece truly yours. <br /> The lower trapezoidal
                 window of your Diamond Queen watch can be custom-engraved with
                 your name, initials, or a short personal inscription of choice —
