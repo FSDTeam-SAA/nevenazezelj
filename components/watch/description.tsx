@@ -24,7 +24,7 @@ interface Watch {
 
 export default function Description({ watch }: { watch: Watch }) {
   return (
-    <div className="lg:py-10 lg:space-y-5 space-y-2 text-black col-span-1">
+    <div className="lg:pt-10 lg:space-y-5 space-y-2 text-black col-span-1">
       <div className="">
         <h2 className="text-[#3a3935] lg:text-4xl text-3xl font-semibold uppercase">
           {watch?.title}
@@ -99,6 +99,25 @@ export default function Description({ watch }: { watch: Watch }) {
             <AccordionContent className="flex flex-col gap-4 text-balance">
               <p className="lg:text-base text-[#3a3935]/70 leading-snug tracking-wide text-justify">
                 {watch?.details}
+              </p>
+            </AccordionContent>
+          </AccordionItem>
+
+          {/* Personalization */}
+          <AccordionItem value="item-4">
+            <AccordionTrigger className="uppercase lg:text-base cursor-pointer text-[#3a3935]">
+              Personalization
+            </AccordionTrigger>
+            <AccordionContent className="flex flex-col gap-4 text-balance">
+              <p className="lg:text-base text-[#3a3935]/70 leading-snug tracking-wide text-justify">
+                Make your ROYALTY© timepiece truly yours. <br /> The lower trapezoidal
+                window of your Diamond Queen watch can be custom-engraved with
+                your name, initials, or a short personal inscription of choice —
+                creating a unique signature piece that reflects your
+                individuality. <br /><br /> Because each personalized watch becomes part of
+                ROYALTY©’s legacy, personalization requests are reviewed
+                individually. <br /><br /> To request a personalized edition, please complete
+                our brief questionnaire for approval.
               </p>
             </AccordionContent>
           </AccordionItem>

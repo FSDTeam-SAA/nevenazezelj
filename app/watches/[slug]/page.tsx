@@ -1,3 +1,4 @@
+import { Button } from "@/components/ui/button";
 import Description from "@/components/watch/description";
 import Gallery from "@/components/watch/gallery";
 import { watches } from "@/lib/constant";
@@ -32,6 +33,11 @@ export default async function WatchDetailsPage({
               }
             }
           />
+          <div className="text-end mt-5">
+            <Button className="cursor-pointer" title="this is only an example of future product page">
+              Apply for Personalization
+            </Button>
+          </div>
         </div>
       </div>
     </div>
