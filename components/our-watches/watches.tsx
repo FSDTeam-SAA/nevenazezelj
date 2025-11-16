@@ -19,7 +19,8 @@ export default function Watches() {
             the SWISS MADE convention, which accurately complies with the
             official regulations set by the Swiss Federal Council. Manufacturing
             is carried out at our dedicated facility located in Solothurn,
-            Switzerland. The company&apos;s mission is to develop and produce
+            Switzerland. Each watch is manually assembled in our dedicated
+            facility. The company&apos;s mission is to develop and produce
             high-quality, innovative elegant watches that establish a new
             standard in the industry.
           </p>
@@ -45,10 +46,18 @@ export default function Watches() {
             </h3>
             <p className="text-lg leading-relaxed text-foreground">
               The core design of ROYALTY&copy; watches is built around an
-              internationally patented, diamond-shaped case. This proprietary
-              design guarantees that each watch bears a unique aesthetic
-              signature, protected under international patent laws, ensuring
-              that the case shape remains exclusive to ROYALTY&copy;.
+              internationally patented, diamond-shaped case{" "}
+              <a
+                href="/royalty_design_patent.pdf"
+                download
+                className="underline"
+              >
+                (patent pdf)
+              </a>
+              . This proprietary design guarantees that each watch bears a
+              unique aesthetic signature, protected under international patent
+              laws, ensuring that the case shape remains exclusive to
+              ROYALTY&copy;.
             </p>
             <p className="text-lg leading-relaxed text-foreground">
               Our signature design features two integrated windows:

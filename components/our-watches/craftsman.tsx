@@ -95,6 +95,18 @@ export default function Craftsman() {
 
           <Card className="text-center hover:shadow-lg transition-shadow p-0 gap-2 pb-4">
             <Image
+              src="/images/rubber.jpg"
+              alt="stainless steel image"
+              width={400}
+              height={200}
+              className="w-full h-32 sm:h-40 object-cover rounded-t-xl"
+            />
+            <h3 className="font-semibold text-lg mb-1 sm:mb-2">Black Rubber</h3>
+            <p className="text-sm sm:text-base">Sturdy and durable</p>
+          </Card>
+
+          <Card className="text-center hover:shadow-lg transition-shadow p-0 gap-2 pb-4">
+            <Image
               src="/images/sapphire.jpg"
               alt="stainless steel image"
               width={400}
@@ -120,11 +132,8 @@ export default function Craftsman() {
             <h3 className="font-semibold text-lg mb-1 sm:mb-2">
               Rhodium Plating
             </h3>
-            <p className="text-sm sm:text-base">
-              Premium precious metal
-            </p>
+            <p className="text-sm sm:text-base">Premium precious metal</p>
           </Card>
-
         </motion.div>
         {/* Description Text */}
         <div className="mt-12 sm:mt-16 text-center">
@@ -135,11 +144,11 @@ export default function Craftsman() {
             viewport={{ once: true, amount: 0.2 }}
             className="text-base lg:text-2xl leading-relaxed max-w-4xl mx-auto mb-6"
           >
-            Our selection of materials includes the finest materials such as stainless steel,
-            titanium, platinum, paladium, 18k gold, and rhodium plating, leather, etc all chosen for
-            their superior quality and longevity. We incorporate premium
-            sapphire glass into every watch, providing exceptional clarity and
-            durability.
+            Our selection of materials includes the finest materials such as
+            stainless steel, titanium, platinum, paladium, 18k gold, and rhodium
+            plating, leather, etc all chosen for their superior quality and
+            longevity. We incorporate premium sapphire glass into every watch,
+            providing exceptional clarity and durability.
           </motion.p>
           <motion.p
             initial={{ opacity: 0, x: 200 }}
@@ -148,9 +157,9 @@ export default function Craftsman() {
             viewport={{ once: true, amount: 0.2 }}
             className="text-base lg:text-2xl leading-relaxed max-w-4xl mx-auto"
           >
-            Our watch offerings features such as automatic, quartz and solar quartz movements,
-            catering to diverse preferences while maintaining our high standards
-            of accuracy, reliability, and craftsmanship.
+            Our watch offerings features such as automatic, quartz and solar
+            quartz movements, catering to diverse preferences while maintaining
+            our high standards of accuracy, reliability, and craftsmanship.
           </motion.p>
         </div>
       </div>
