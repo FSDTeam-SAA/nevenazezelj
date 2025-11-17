@@ -31,7 +31,7 @@ export default function Watches() {
           {/* Image */}
           <div>
             <Image
-              src="/images/watch.jpg"
+              src="/images/w.png"
               alt="ROYALTY&copy; Diamond King Collection Watch"
               width={1000}
               height={1000}
