@@ -6,7 +6,7 @@ import React from "react";
 
 export default function Watches() {
   return (
-    <section className="py-8 lg:py-20">
+    <section className="py-8 lg:py-20 bg-white">
       <div className="container">
         <div className="text-center text-[#C0A875] max-w-3xl mx-auto lg:space-y-5 space-y-3">
           <h2 className="lg:text-5xl text-2xl font-bold uppercase">
@@ -14,7 +14,7 @@ export default function Watches() {
           </h2>
           <p className="text-sm lg:text-base text-justify lg:text-center">
             Introducing the Diamond Queen Collection the inaugural signature line
-            from ROYALTY 	&copy;, crafted to redefine sophistication and precision. This
+            from ROYALTY&copy;, crafted to redefine sophistication and precision. This
             collection marks the beginning of a new era in high-end timepieces,
             embodying elegance, innovation, and exclusivity. At the heart of
             this collection lies our unique, internationally patented design a
@@ -22,7 +22,7 @@ export default function Watches() {
             exemplifies sophistication.
           </p>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:gap-10 gap-8 mt-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 lg:gap-6 gap-3 mt-8">
           {watches.map((watch) => (
             <div key={watch.id}>
               <Link href={`/watches/${watch.slug}`}>

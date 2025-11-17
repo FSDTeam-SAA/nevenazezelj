@@ -1,3 +1,4 @@
+import { Button } from "@/components/ui/button";
 import Description from "@/components/watch/description";
 import Gallery from "@/components/watch/gallery";
 import { watches } from "@/lib/constant";
@@ -13,10 +14,10 @@ export default async function WatchDetailsPage({
   const watch = watches.find((watch) => watch.slug === resolvedParams.slug);
 
   return (
-    <div className="bg-white lg:pb-20">
+    <div className="bg-white lg:pb-20 pb-5">
       <div className="container grid grid-cols-1 lg:grid-cols-3 lg:gap-8 gap-12">
         <div className="lg:col-span-2">
-          <Gallery images={watch?.images || [] } video={watch?.video || ""} />
+          <Gallery images={watch?.images || []} video={watch?.video || ""} />
         </div>
         <div className="lg:col-span-1">
           <Description
@@ -28,10 +29,18 @@ export default async function WatchDetailsPage({
                 price: 0,
                 details: "",
                 features: [],
-                strapAndBuckles: [],
+                movement: [],
               }
             }
           />
+          <div className="text-end mt-5">
+            <Button className="cursor-pointer">
+              Apply for Personalization
+            </Button>
+            <div className="text-[black] text-sm">
+              <i>this is only an example of future product page</i>
+            </div>
+          </div>
         </div>
       </div>
     </div>
