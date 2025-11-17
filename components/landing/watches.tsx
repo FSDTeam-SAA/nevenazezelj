@@ -22,7 +22,7 @@ export default function Watches() {
             exemplifies sophistication.
           </p>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-3 lg:gap-10 gap-8 mt-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 lg:gap-6 gap-3 mt-8">
           {watches.map((watch) => (
             <div key={watch.id}>
               <Link href={`/watches/${watch.slug}`}>

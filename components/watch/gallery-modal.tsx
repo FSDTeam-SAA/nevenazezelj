@@ -51,7 +51,7 @@ export function GalleryModal({
 
   return (
     <Dialog open={open} onOpenChange={onOpenChange}>
-      <DialogContent className="h-svh w-screen bg-[#e9e9e9] p-0 border-none">
+      <DialogContent className="!h-svh w-screen bg-white p-0 border-none">
         <DialogHeader className="sr-only">
           <DialogTitle>View All Images of the Watch</DialogTitle>
           <DialogDescription>
@@ -59,7 +59,7 @@ export function GalleryModal({
           </DialogDescription>
         </DialogHeader>
 
-        <div className="relative w-full h-full flex items-center justify-center overflow-hidden -mt-14">
+        <div className="relative w-full h-full flex items-center justify-center overflow-hidden ">
           {totalItems > 1 && (
             <button
               onClick={goToPrevious}
@@ -73,8 +73,9 @@ export function GalleryModal({
             {isVideo(currentIndex) ? (
               <video
                 src={allMedia[currentIndex]}
-                className="lg:w-[1500px] w-[900px] max-h-full object-contain"
+                className="w-full max-h-full object-contain scale-150 lg:scale-100"
                 autoPlay
+                loop
                 muted
               />
             ) : (
@@ -83,7 +84,7 @@ export function GalleryModal({
                 alt={`Product ${currentIndex + 1}`}
                 width={1000}
                 height={1000}
-                className="lg:w-[1500px] w-[900px] max-h-full object-contain"
+                className="w-full max-h-full object-contain scale-150 lg:scale-100"
                 priority
                 quality={100}
               />
