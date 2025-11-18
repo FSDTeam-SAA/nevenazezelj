@@ -51,7 +51,7 @@ export function GalleryModal({
 
   return (
     <Dialog open={open} onOpenChange={onOpenChange}>
-      <DialogContent className="!h-svh w-screen bg-white p-0 border-none">
+      <DialogContent className="!h-[100vh] w-screen bg-white p-0 border-none">
         <DialogHeader className="sr-only">
           <DialogTitle>View All Images of the Watch</DialogTitle>
           <DialogDescription>

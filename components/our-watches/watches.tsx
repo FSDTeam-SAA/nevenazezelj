@@ -14,15 +14,14 @@ export default function Watches() {
             ROYALTY&copy; is a brand made for today&apos;s visionaries and
             leaders who are perfectionists and passionate. Elegant, empowering,
             and outstanding design make up a line of high-quality watches. Each
-            detail is carefully designed in our German headquarters by our
-            founder. Our watch making operates under the strict regulations of
-            the SWISS MADE convention, which accurately complies with the
-            official regulations set by the Swiss Federal Council. Manufacturing
-            is carried out at our dedicated facility located in Solothurn,
-            Switzerland. Each watch is manually assembled in our dedicated
-            facility. The company&apos;s mission is to develop and produce
-            high-quality, innovative elegant watches that establish a new
-            standard in the industry.
+            detail is carefully designed by our founder. Our watch making
+            operates under the strict regulations of the SWISS MADE convention,
+            which accurately complies with the official regulations set by the
+            Swiss Federal Council. Manufacturing is carried out at our dedicated
+            facility located in Solothurn, Switzerland. Each watch is manually
+            assembled in our dedicated facility. The company&apos;s mission is
+            to develop and produce high-quality, innovative elegant watches that
+            establish a new standard in the industry.
           </p>
         </div>
 
