@@ -8,18 +8,18 @@ export default function Watches() {
   return (
     <section className="py-8 lg:py-20 bg-white">
       <div className="container">
-        <div className="text-center text-[#C0A875] max-w-3xl mx-auto lg:space-y-5 space-y-3">
+        <div className="text-center text-black max-w-3xl mx-auto lg:space-y-5 space-y-3">
           <h2 className="lg:text-5xl text-2xl font-bold uppercase">
             The Diamond QUEEN
           </h2>
           <p className="text-sm lg:text-base text-justify lg:text-center">
-            Introducing the Diamond Queen Collection the inaugural signature line
-            from ROYALTY&copy;, crafted to redefine sophistication and precision. This
-            collection marks the beginning of a new era in high-end timepieces,
-            embodying elegance, innovation, and exclusivity. At the heart of
-            this collection lies our unique, internationally patented design a
-            commanding diamond-shaped case that captures attention and
-            exemplifies sophistication.
+            Introducing the Diamond Queen Collection the inaugural signature
+            line from ROYALTY&copy;, crafted to redefine sophistication and
+            precision. This collection marks the beginning of a new era in
+            high-end timepieces, embodying elegance, innovation, and
+            exclusivity. At the heart of this collection lies our unique,
+            internationally patented design a commanding diamond-shaped case
+            that captures attention and exemplifies sophistication.
           </p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 lg:gap-6 gap-3 mt-8">
@@ -37,12 +37,12 @@ export default function Watches() {
                 </div>
               </Link>
               <div className="lg:pt-5 pt-2 space-y-1">
-                <p className="text-[#C0A875] text-sm">DIAMOND QUEEN</p>
-                <h3 className="lg:text-2xl text-xl font-semibold text-[#C0A875]">
+                <p className="text-black text-sm">DIAMOND QUEEN</p>
+                <h3 className="lg:text-2xl text-xl font-semibold text-black">
                   {watch.title}
                 </h3>
                 <Link href={`/watches/${watch.slug}`}>
-                  <p className="text-[#C0A875] flex items-center gap-2">
+                  <p className="text-black flex items-center gap-2">
                     Discover More <ChevronRight className="w-4 h-4" />
                   </p>
                 </Link>

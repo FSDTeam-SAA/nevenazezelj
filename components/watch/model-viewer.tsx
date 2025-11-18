@@ -30,7 +30,13 @@ function WatchModel({ onModelLoaded }: { onModelLoaded: () => void }) {
   const monarch = pathname === "/watches/monarch-s-379";
   const aureus = pathname === "/watches/aureus-sg-379";
   const isMobile = useIsMobile();
-  const { scene } = useGLTF(monarch ? "/model/monarch.glb" : aureus ? "/model/aureus.glb" : "/model/old.glb");
+  const { scene } = useGLTF(
+    monarch
+      ? "/model/monarch.glb"
+      : aureus
+      ? "/model/aureus.glb"
+      : "/model/old.glb"
+  );
 
   useEffect(() => {
     onModelLoaded();
@@ -78,7 +84,7 @@ export default function WatchViewer() {
   };
 
   return (
-    <div className="relative h-svh w-svw border-2">
+    <div className="relative h-[100vh] w-vw border-2">
       {!isLoaded && <Loader />}
       <Canvas shadows camera={{ position: [0, 0, 5], fov: 40 }}>
         <ambientLight intensity={0.5} />
