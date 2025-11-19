@@ -1,6 +1,6 @@
 "use client";
 
-import { Canvas } from "@react-three/fiber";
+import { Canvas, useThree } from "@react-three/fiber";
 import {
   OrbitControls,
   Environment,
@@ -20,78 +20,119 @@ function WatchModel({ onModelLoaded }: { onModelLoaded: () => void }) {
   const glbPath = monarch
     ? "/model/Monarch2.glb"
     : aureus
-    ? "/model/Aureus2.glb"
-    : "/model/old.glb";
+    ? "/model/Aureus_Modified_2.glb"
+    : "/model/Empress.glb";
 
   const { scene } = useGLTF(glbPath);
+  const sceneRef = useRef(scene);
 
   useEffect(() => {
-    // Wait until gltf scene exists
-    if (!scene) return;
+    sceneRef.current = scene;
+  }, [scene]);
+
+  useEffect(() => {
+    const currentScene = sceneRef.current;
+    if (!currentScene) return;
+
+    console.log("[v0] WatchModel useEffect triggered for path:", glbPath);
 
     // 1) Ensure geometries have bounding info (safe)
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    scene.traverse((obj: any) => {
+    currentScene.traverse((obj: any) => {
       if (obj.isMesh && obj.geometry) {
-        // make sure geometry bounding info is computed
         obj.geometry.computeBoundingBox?.();
         obj.geometry.computeBoundingSphere?.();
       }
     });
 
     // 2) Compute combined bounding box of the whole visible scene
-    const box = new Box3().setFromObject(scene);
+    const box = new Box3().setFromObject(currentScene);
 
-    // If the box is empty (no geometry), bail
     if (!box.isEmpty()) {
-      // 3) Optionally detect very large empty nodes and remove them:
-      //    (If some child node has enormous size compared to the rest, remove it)
       const size = new Vector3();
       box.getSize(size);
       const maxDim = Math.max(size.x, size.y, size.z);
 
       // Quick heuristic: remove any child whose own box is > 10x maxDim
       // eslint-disable-next-line @typescript-eslint/no-explicit-any
-      scene.children = scene.children.filter((child: any) => {
+      currentScene.children = currentScene.children.filter((child: any) => {
         if (!child) return false;
         const childBox = new Box3().setFromObject(child);
         if (childBox.isEmpty()) return true;
         const childSize = new Vector3();
         childBox.getSize(childSize);
         const childMax = Math.max(childSize.x, childSize.y, childSize.z);
-        // keep child if reasonable
         if (childMax > maxDim * 10) {
-          // drop it (likely an invisible huge helper or an empty root)
           return false;
         }
         return true;
       });
 
       // Recompute bounding box after pruning
-      const prunedBox = new Box3().setFromObject(scene);
+      const prunedBox = new Box3().setFromObject(currentScene);
       prunedBox.getSize(size);
       const prunedMax = Math.max(size.x, size.y, size.z);
 
       // 4) Center the model (move so world origin is at the model center)
       const center = new Vector3();
       prunedBox.getCenter(center);
-      // subtract center from scene.position so model's center -> (0,0,0)
-      scene.position.sub(center);
+      currentScene.position.sub(center);
 
       // 5) Uniformly scale model to a desired visible size
-      const desiredSize = 1.6; // tweak this to taste (how big you want the model)
+      const desiredSize = 1.6;
       if (prunedMax > 0) {
         const scale = desiredSize / prunedMax;
-        scene.scale.setScalar(scale);
+        currentScene.scale.setScalar(scale);
       }
+
+      console.log(
+        "[v0] Model processed - size:",
+        prunedMax,
+        "scale:",
+        prunedMax > 0 ? desiredSize / prunedMax : 1
+      );
+    } else {
+      console.log("[v0] Empty bounding box detected for model");
     }
 
-    // signal parent loader
     onModelLoaded();
-  }, [scene, onModelLoaded]);
+  }, [glbPath, onModelLoaded]);
 
-  // Render the cleaned scene directly. Do NOT wrap in Center.
   return <primitive object={scene} />;
+}
+
+function CameraController({ isLoaded }: { isLoaded: boolean }) {
+  const { camera } = useThree();
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  const controlsRef = useRef<any>(null);
+
+  useEffect(() => {
+    if (!isLoaded) return;
+
+    console.log("[v0] CameraController: Fitting camera to model");
+
+    // Position camera at a distance that frames the model
+    const distance = 5;
+    camera.position.set(0, 1, distance);
+    camera.lookAt(0, 0, 0);
+    camera.updateProjectionMatrix();
+
+    // Update controls to sync with camera
+    if (controlsRef.current) {
+      controlsRef.current.target.set(0, 0, 0);
+      controlsRef.current.object = camera;
+      controlsRef.current.update();
+    }
+  }, [isLoaded, camera]);
+
+  return (
+    <OrbitControls
+      ref={controlsRef}
+      enablePan={false}
+      minDistance={2}
+      maxDistance={7}
+    />
+  );
 }
 
 function Loader() {
@@ -114,24 +155,36 @@ function Loader() {
 }
 
 export default function WatchViewer() {
-  const controlsRef = useRef(null);
   const [isLoaded, setIsLoaded] = useState(false);
-  const [startTime] = useState(() => Date.now());
+  const timeoutRef = useRef<NodeJS.Timeout | null>(null);
+
+  useEffect(() => {
+    return () => {
+      // Clear any pending timeout when component unmounts
+      if (timeoutRef.current) {
+        clearTimeout(timeoutRef.current);
+      }
+    };
+  }, []);
 
   const handleModelLoaded = () => {
-    const elapsed = Date.now() - startTime;
-    const remaining = 1000 - elapsed; // 1s minimum
-    if (remaining > 0) {
-      setTimeout(() => setIsLoaded(true), remaining);
-    } else {
-      setIsLoaded(true);
+    console.log("[v0] Model load complete, scheduling isLoaded state update");
+
+    if (timeoutRef.current) {
+      clearTimeout(timeoutRef.current);
     }
+
+    // Enforce a minimum loader display time for UX
+    timeoutRef.current = setTimeout(() => {
+      setIsLoaded(true);
+      timeoutRef.current = null;
+    }, 1000);
   };
 
   return (
     <div className="relative h-[100vh] w-vw border-2">
       {!isLoaded && <Loader />}
-      <Canvas shadows camera={{ position: [0, 0, 5], fov: 40 }}>
+      <Canvas shadows camera={{ position: [0, 1, 5], fov: 40 }}>
         <ambientLight intensity={0.5} />
         <directionalLight
           castShadow
@@ -151,12 +204,7 @@ export default function WatchViewer() {
             far={4}
           />
         </Suspense>
-        <OrbitControls
-          ref={controlsRef}
-          enablePan={false}
-          minDistance={2}
-          maxDistance={7}
-        />
+        <CameraController isLoaded={isLoaded} />
       </Canvas>
     </div>
   );
