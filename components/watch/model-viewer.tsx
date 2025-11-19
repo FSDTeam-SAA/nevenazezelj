@@ -5,48 +5,93 @@ import {
   OrbitControls,
   Environment,
   useGLTF,
-  Center,
   useProgress,
   ContactShadows,
 } from "@react-three/drei";
 import { Suspense, useRef, useState, useEffect } from "react";
 import { usePathname } from "next/navigation";
 import Image from "next/image";
-
-// Hook to check if screen is mobile/tablet
-function useIsMobile() {
-  const [isMobile, setIsMobile] = useState(false);
-  useEffect(() => {
-    const checkSize = () => setIsMobile(window.innerWidth < 1024);
-    checkSize();
-    window.addEventListener("resize", checkSize);
-    return () => window.removeEventListener("resize", checkSize);
-  }, []);
-  return isMobile;
-}
+import { Box3, Vector3 } from "three";
 
 function WatchModel({ onModelLoaded }: { onModelLoaded: () => void }) {
   const pathname = usePathname();
   const monarch = pathname === "/watches/monarch-s-379";
   const aureus = pathname === "/watches/aureus-sg-379";
-  const isMobile = useIsMobile();
-  const { scene } = useGLTF(
-    monarch
-      ? "/model/monarch.glb"
-      : aureus
-      ? "/model/aureus.glb"
-      : "/model/old.glb"
-  );
+  const glbPath = monarch
+    ? "/model/Monarch2.glb"
+    : aureus
+    ? "/model/Aureus2.glb"
+    : "/model/old.glb";
+
+  const { scene } = useGLTF(glbPath);
 
   useEffect(() => {
-    onModelLoaded();
-  }, [onModelLoaded]);
+    // Wait until gltf scene exists
+    if (!scene) return;
 
-  return (
-    <Center position={isMobile ? [0.03, 1 / 2, 0] : [0.1, 0, 0]}>
-      <primitive object={scene} scale={isMobile ? 1.3 : 1.7} />
-    </Center>
-  );
+    // 1) Ensure geometries have bounding info (safe)
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    scene.traverse((obj: any) => {
+      if (obj.isMesh && obj.geometry) {
+        // make sure geometry bounding info is computed
+        obj.geometry.computeBoundingBox?.();
+        obj.geometry.computeBoundingSphere?.();
+      }
+    });
+
+    // 2) Compute combined bounding box of the whole visible scene
+    const box = new Box3().setFromObject(scene);
+
+    // If the box is empty (no geometry), bail
+    if (!box.isEmpty()) {
+      // 3) Optionally detect very large empty nodes and remove them:
+      //    (If some child node has enormous size compared to the rest, remove it)
+      const size = new Vector3();
+      box.getSize(size);
+      const maxDim = Math.max(size.x, size.y, size.z);
+
+      // Quick heuristic: remove any child whose own box is > 10x maxDim
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
+      scene.children = scene.children.filter((child: any) => {
+        if (!child) return false;
+        const childBox = new Box3().setFromObject(child);
+        if (childBox.isEmpty()) return true;
+        const childSize = new Vector3();
+        childBox.getSize(childSize);
+        const childMax = Math.max(childSize.x, childSize.y, childSize.z);
+        // keep child if reasonable
+        if (childMax > maxDim * 10) {
+          // drop it (likely an invisible huge helper or an empty root)
+          return false;
+        }
+        return true;
+      });
+
+      // Recompute bounding box after pruning
+      const prunedBox = new Box3().setFromObject(scene);
+      prunedBox.getSize(size);
+      const prunedMax = Math.max(size.x, size.y, size.z);
+
+      // 4) Center the model (move so world origin is at the model center)
+      const center = new Vector3();
+      prunedBox.getCenter(center);
+      // subtract center from scene.position so model's center -> (0,0,0)
+      scene.position.sub(center);
+
+      // 5) Uniformly scale model to a desired visible size
+      const desiredSize = 1.6; // tweak this to taste (how big you want the model)
+      if (prunedMax > 0) {
+        const scale = desiredSize / prunedMax;
+        scene.scale.setScalar(scale);
+      }
+    }
+
+    // signal parent loader
+    onModelLoaded();
+  }, [scene, onModelLoaded]);
+
+  // Render the cleaned scene directly. Do NOT wrap in Center.
+  return <primitive object={scene} />;
 }
 
 function Loader() {
@@ -99,18 +144,18 @@ export default function WatchViewer() {
           <WatchModel onModelLoaded={handleModelLoaded} />
           <Environment preset="studio" />
           <ContactShadows
-            position={[0, -1.2, 0]}
+            position={[0, -1, 0]}
             opacity={0.5}
             scale={7}
             blur={3}
-            far={5}
+            far={4}
           />
         </Suspense>
         <OrbitControls
           ref={controlsRef}
           enablePan={false}
-          minDistance={3}
-          maxDistance={9}
+          minDistance={2}
+          maxDistance={7}
         />
       </Canvas>
     </div>
