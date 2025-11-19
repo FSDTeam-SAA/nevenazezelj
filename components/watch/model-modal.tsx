@@ -20,7 +20,7 @@ export function ModelModal({ open, onOpenChange, trigger }: ModelModalProps) {
   return (
     <Dialog open={open} onOpenChange={onOpenChange}>
       {trigger && <DialogTrigger asChild>{trigger}</DialogTrigger>}
-      <DialogContent className="h-[100vh] w-[100vw] bg-[#efefef]">
+      <DialogContent className="!h-[100vh] w-[100vw] bg-[#efefef]">
         <DialogHeader>
           <DialogTitle className="sr-only">View 3D Model</DialogTitle>
           <DialogDescription className="sr-only">

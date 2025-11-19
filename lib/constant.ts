@@ -10,8 +10,8 @@ export const watches = [
       "/images/aureus3.jpg",
       "/images/aureus4.jpg",
     ],
-    model: "/model/aureus.glb",
-    price: 9000,
+    model: "/model/Aureus_Modified_2.glb",
+    price: 9900,
     descriptionOne: "DIAMOND QUEEN",
     descriptionTwo: "Automatic - Sapphire Crystal - Stainless steel",
     details:
@@ -83,8 +83,8 @@ export const watches = [
       "/images/monarch3.jpg",
       "/images/monarch4.jpg",
     ],
-    model: "/model/monarch.glb",
-    price: 9000,
+    model: "/model/Monarch2.glb",
+    price: 9900,
     descriptionOne: "DIAMOND QUEEN",
     descriptionTwo: "Automatic - Sapphire Crystal - Stainless steel",
     details:
@@ -150,9 +150,14 @@ export const watches = [
     title: "EMPRESS SB 379",
     slug: "empress-sb-379",
     video: "/videos/empress.mp4",
-    images: ["/images/empress1.jpg", "/images/empress2.jpg", "/images/empress3.jpg", "/images/empress4.jpg"],
+    images: [
+      "/images/empress1.jpg",
+      "/images/empress2.jpg",
+      "/images/empress3.jpg",
+      "/images/empress4.jpg",
+    ],
     model: "/model/old.glb",
-    price: 9000,
+    price: 9900,
     descriptionOne: "DIAMOND QUEEN",
     descriptionTwo: "Automatic - Sapphire Crystal - Stainless steel",
     details:
