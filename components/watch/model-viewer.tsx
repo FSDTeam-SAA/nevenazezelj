@@ -18,9 +18,9 @@ function WatchModel({ onModelLoaded }: { onModelLoaded: () => void }) {
   const monarch = pathname === "/watches/monarch-s-379";
   const aureus = pathname === "/watches/aureus-sg-379";
   const glbPath = monarch
-    ? "/model/Monarch2.glb"
+    ? "/model/Monarch3.glb"
     : aureus
-    ? "/model/Aureus_Modified_2.glb"
+    ? "/model/Aureus3.glb"
     : "/model/Empress.glb";
 
   const { scene } = useGLTF(glbPath);
